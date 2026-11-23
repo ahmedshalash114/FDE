@@ -12,6 +12,7 @@
 | 05 | Prompt Engineering: clear, specific, XML tags, examples (0 → 10 → 12 من 12) | [`L05-prompting`](L05-prompting) |
 | 06 | Prompt Evals: dataset, code grader, model grader (6.1 → 9.2 بسطر واحد) | [`L06-evals`](L06-evals) |
 | 07 | Tool Use: tool schemas, tool_use / tool_result, the loop (0 → 5 من 6 tool calls بسطر واحد) | [`L07-tool-use`](L07-tool-use) |
-| 08 | Extended Thinking | قريب |
+| 08 | Extended Thinking: thinking blocks مع الـ tools (0 → 5 من 6 tool calls) والتكلفة | [`L08-thinking`](L08-thinking) |
+| 09 | MCP | قريب |
 
 تابع السلسلة: [@ahmedm.shalash](https://www.instagram.com/ahmedm.shalash/)
