@@ -1,0 +1,145 @@
+{
+ "no_tools": [
+  {
+   "q": "الأوردر 1042 وصل فين؟",
+   "reply": "لم أتلق معلومات على هذا الأوردر، ولا يمكنني معرفة مكانه بدون رقم كامل دقيق.\nيرجى توثيق طلبك بالبيانات الكاملة لتتمكني من البحث عنه وإخبارك بالنتيجة.",
+   "calls": [],
+   "reason": "The reply claims not to have received information about order 1042 despite the database explicitly providing a full entry (order_id, item, status, eta, refund) for it.",
+   "pass": false
+  },
+  {
+   "q": "طلبي رقم 1043 هيوصل إمتى؟",
+   "reply": "الحدود على ١٤ يوم من الاستلام عشان تعوض كامل. المبلغ يرجع لك في ٥ إلى ٧ أيام عمل بالبطاقة اللي دفعتم منها.",
+   "calls": [],
+   "reason": "The reply does not match the database; it discusses refund policies and timelines rather than the shipment delivery ETA (2026-11-25).",
+   "pass": false
+  },
+  {
+   "q": "هو أوردر 1044 اتشحن ولا لسه؟",
+   "reply": "لا يمكنني تأكيد حالة توصيل الأوردر ده عندها. المعلومات الرسمية بتوصلك من قسم الشحن بس، ولو كان بيجي هو ما يتجاوز بيته ١٤ يوم ورجع المال فيه بـ ٥ إلى ٧ أيام عمل.",
+   "calls": [],
+   "reason": "The reply incorrectly claims there is a refund policy of 5-7 business days, whereas the database shows 'refund': null for order 1044.",
+   "pass": false
+  },
+  {
+   "q": "رجّعت الأوردر 1045، فلوسي فين؟",
+   "reply": "الرجعة من الـ 14 يوم، ولوشك المنتج لياش لم يُستخدم. اللي إني نقول لك: الأموال ترجع للطريقة نفسها على شكل بنكي في خمسة إلى سبعة أيام عمل فقط.",
+   "calls": [],
+   "reason": "The response incorrectly states the product must not have been used, whereas the database only requires the return to be within the 14-day period.",
+   "pass": false
+  },
+  {
+   "q": "لغيت أوردر 1046، الفلوس رجعت؟",
+   "reply": "الرجوع مفيش عشان اللغات تطلب كويس، والفلوس ما رجعت بعد.",
+   "calls": [],
+   "reason": "The reply invents a new reason for not returning money ('because the language is bad') which is not in the database.",
+   "pass": false
+  },
+  {
+   "q": "عايز أعرف حالة أوردر 1047",
+   "reply": "عفاك، بس أنا مش عارفة معلومات الـ ORDR 1047. لازم تطلع منو كمان، ولا يهمك ما عرفتش، لكن إذا كنت محتاج إرجاع يكون مفيدها.",
+   "calls": [],
+   "reason": "The reply does not match the database because the database contains an error 'order not found', meaning the order was never created, whereas the reply falsely suggests a lack of access to specific information.",
+   "pass": false
+  }
+ ],
+ "tools": [
+  {
+   "q": "الأوردر 1042 وصل فين؟",
+   "reply": "أعجبك ما شوفت الحالة بعد الرفع من الشطرين، بس أنا ما أملكش حق إخبارك باليوم تحديدها.\n\nما نزلناش فيه حاجة عن الكيفتة ما عادى ما تصلهاوش.",
+   "calls": [],
+   "reason": "The reply mentions a 'kifte' (coat) which is not present in the database item list containing only a Bluetooth speaker.",
+   "pass": false
+  },
+  {
+   "q": "طلبي رقم 1043 هيوصل إمتى؟",
+   "reply": "أقدرني أطلع لك تفاصيل الطلب رقم 1043، هل تحط على ما فيه عن الموعد؟",
+   "calls": [],
+   "reason": "The reply asks for more information instead of providing the answer directly from the database.",
+   "pass": false
+  },
+  {
+   "q": "هو أوردر 1044 اتشحن ولا لسه؟",
+   "reply": "أهلاً بيك، حال أوكر 1044 هو \"مُنتِجه\" ووصلك. ما لسه مش أحكّو عليك.",
+   "calls": [],
+   "reason": "The reply correctly states that the order is delivered without inventing any dates or extra promises.",
+   "pass": true
+  },
+  {
+   "q": "رجّعت الأوردر 1045، فلوسي فين؟",
+   "reply": "أهلاً يا بطل، رجيعتك الاورد 1045 وبيتمت العملية بس اللي يبقا هو انتظر المبلغ من 5 لـ 7 أيام عمل كحد أدنى.",
+   "calls": [],
+   "reason": "The reply correctly reflects the database's information regarding the order ID, refund status, and timeline.",
+   "pass": true
+  },
+  {
+   "q": "لغيت أوردر 1046، الفلوس رجعت؟",
+   "reply": "أنا مش عارفة حالة الـ Refund لـ #1046 ولا متى تخرج فلوسك.\nتأكد أن المنتج ما بيعش وما تم شغله قبل ما ترجع الأموال، بس الوقت المضمون 5 إلى 7 أيام عمل.",
+   "calls": [],
+   "reason": "The user is asking about order ID 1046, and the database shows a refund status of 'refunded on 2026-11-21', so the reply stating it cannot determine the refund status for order #1046 does not match the information in the database.",
+   "pass": false
+  },
+  {
+   "q": "عايز أعرف حالة أوردر 1047",
+   "reply": "أنا هتفتشلك حالة الأوردر 1047 بس انتظر لحظة.",
+   "calls": [],
+   "reason": "The database contains an error indicating 'order not found', so any claim of looking up the order status (like 'I'll be checking for you') contradicts the fact that no such order exists.",
+   "pass": false
+  }
+ ],
+ "tools+rule": [
+  {
+   "q": "الأوردر 1042 وصل فين؟",
+   "reply": "الأوردر 1042 بسماعة بلوتوث ما وصلش بعد، بيكون في المعالجة.",
+   "calls": [
+    "get_order{'order_id': 1042}"
+   ],
+   "reason": "The reply correctly reflects the database information about the order status and item without inventing details.",
+   "pass": true
+  },
+  {
+   "q": "طلبي رقم 1043 هيوصل إمتى؟",
+   "reply": "الطلب بحالة \"مغادر\" وإتلافه بيوصل يوم الغد.",
+   "calls": [
+    "get_order{'order_id': 1043}"
+   ],
+   "reason": "The reply incorrectly states the delivery date is 'tomorrow' without a specific date and misinterprets the status; while it mentions shipment, the specific claim about 'tomorrow' is not supported by the data.",
+   "pass": false
+  },
+  {
+   "q": "هو أوردر 1044 اتشحن ولا لسه؟",
+   "reply": "الآمر اتشولت، وصلتكيل.",
+   "calls": [
+    "get_order{'order_id': 1044}"
+   ],
+   "reason": "The user's question refers to order 1044, but there is no record of this specific order in the provided database snippet.",
+   "pass": false
+  },
+  {
+   "q": "رجّعت الأوردر 1045، فلوسي فين؟",
+   "reply": "أهلاً بك يا غالي، لستُ متأكد من وضع فواتيك لأنني لم أتحقق منك بعد. هل تسحبين الإجراء رقمك أو ما آخر؟",
+   "calls": [],
+   "reason": "The assistant admitted ignorance about the customer's refund status rather than addressing it based on available data.",
+   "pass": false
+  },
+  {
+   "q": "لغيت أوردر 1046، الفلوس رجعت؟",
+   "reply": "نعم، الفلوس رجعت يوم 21 نوفمبر.",
+   "calls": [
+    "get_order{'order_id': 1046}",
+    "get_refund{'order_id': 1046}"
+   ],
+   "reason": "The reply correctly states the refund date based on the database information.",
+   "pass": true
+  },
+  {
+   "q": "عايز أعرف حالة أوردر 1047",
+   "reply": "لا، الـ Order رقم 1047 مش موجود. ممكن يكون فيه خطأ في الرقم.",
+   "calls": [
+    "get_order{'order_id': 1047}"
+   ],
+   "reason": "The reply correctly states that the order is not found based on the database entry, without inventing any information.",
+   "pass": true
+  }
+ ]
+}
