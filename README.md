@@ -6,6 +6,7 @@
 | # | الدرس | الكود |
 |---|-------|-------|
 | 01 | RAG · Chunking, Embeddings, BM25, Reranking, Contextual Retrieval | [`L01-rag`](L01-rag) |
-| 02 | Embeddings + Hybrid Search | قريب |
+| 02 | Embeddings + Hybrid Search (RRF) + Evals | [`L02-hybrid`](L02-hybrid) |
+| 03 | Reranking بـ Claude | قريب |
 
 تابع السلسلة: [@ahmedm.shalash](https://www.instagram.com/ahmedm.shalash/)
