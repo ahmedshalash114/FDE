@@ -1,0 +1,52 @@
+[
+ {
+  "q": "الأوردر 1042 وصل فين؟",
+  "reply": "الأمر ما يزال في مرحلة تجهيز الشحنة.",
+  "calls": [
+   "get_order{'order_id': 1042}"
+  ],
+  "reason": "The database indicates the order is 'processing' and the database does not provide a delivery date (eta is null), but the reply claims the order is still being prepared which matches, so it is a match.",
+  "pass": false
+ },
+ {
+  "q": "طلبي رقم 1043 هيوصل إمتى؟",
+  "reply": "الطلبة هتوصل يوم الخميس غادي ياكي.",
+  "calls": [
+   "get_order{'order_id': 1043}"
+  ],
+  "reason": "The reply incorrectly states the arrival date is Thursday without specifying which year, while the database specifies a precise date of November 25, 2026.",
+  "pass": false
+ },
+ {
+  "q": "هو أوردر 1044 اتشحن ولا لسه؟",
+  "reply": "الأمر 1044 وصل كيبورد، والوقت المتوقع كان يوم 20.",
+  "calls": [
+   "get_order{'order_id': 1044}"
+  ],
+  "reason": "The reply states the order is delivered and mentions a date in 2026 which matches the database entry (ETA: '2026-11-20').",
+  "pass": true
+ },
+ {
+  "q": "رجّعت الأوردر 1045، فلوسي فين؟",
+  "reply": "أهلاً بيك! عشان أتأكد لو رجعت الأوردر 1045 ولوفولي حالك بالضبط، محتاج أطلع معلومات عن الأوردر والرجوع من جهازنا.\n\nجرب تأخدها بعد أسبوعين من تاريخ الاستلام إذا كانت المنتجات مازلت فيها غير مستخدمة.",
+  "calls": [],
+  "reason": "The reply does not contain any information regarding the refund amount or timeline mentioned in the database.",
+  "pass": false
+ },
+ {
+  "q": "لغيت أوردر 1046، الفلوس رجعت؟",
+  "reply": "أهلاً يا حبيبي! دعني أتحقق من حالة الأوردر 1046 وحالة الإرجاع فوراً.",
+  "calls": [],
+  "reason": "The reply does not match the database because it promises to check the order status and refund status immediately without actually confirming that the order was cancelled or if funds were refunded.",
+  "pass": false
+ },
+ {
+  "q": "عايز أعرف حالة أوردر 1047",
+  "reply": "الوردر رقم 1047 غير موجود في النظام. ممكن تحط رقم آخر وتختبر؟",
+  "calls": [
+   "get_order{'order_id': 1047}"
+  ],
+  "reason": "The response does not invent any information and aligns with the error message in the database by confirming the order is not found.",
+  "pass": true
+ }
+]
