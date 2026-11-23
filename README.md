@@ -8,6 +8,7 @@
 | 01 | RAG · Chunking, Embeddings, BM25, Reranking, Contextual Retrieval | [`L01-rag`](L01-rag) |
 | 02 | Embeddings + Hybrid Search (RRF) + Evals | [`L02-hybrid`](L02-hybrid) |
 | 03 | Reranking + Contextual Retrieval | [`L03-rerank`](L03-rerank) |
-| 04 | أول API call مع Claude | قريب |
+| 04 | أول API call: request, multi-turn, system prompt, streaming, JSON | [`L04-first-call`](L04-first-call) |
+| 05 | Prompt Engineering | قريب |
 
 تابع السلسلة: [@ahmedm.shalash](https://www.instagram.com/ahmedm.shalash/)
