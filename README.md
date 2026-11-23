@@ -9,6 +9,7 @@
 | 02 | Embeddings + Hybrid Search (RRF) + Evals | [`L02-hybrid`](L02-hybrid) |
 | 03 | Reranking + Contextual Retrieval | [`L03-rerank`](L03-rerank) |
 | 04 | أول API call: request, multi-turn, system prompt, streaming, JSON | [`L04-first-call`](L04-first-call) |
-| 05 | Prompt Engineering | قريب |
+| 05 | Prompt Engineering: clear, specific, XML tags, examples (0 → 10 → 12 من 12) | [`L05-prompting`](L05-prompting) |
+| 06 | Prompt Evals | قريب |
 
 تابع السلسلة: [@ahmedm.shalash](https://www.instagram.com/ahmedm.shalash/)
