@@ -1,0 +1,377 @@
+{
+ "agent": [
+  {
+   "q": "الأوردر 1042 وصل فين؟",
+   "reply": "الأوردر 1042 بسماعة بلوتوث ما وصلش بعد، بيكون في المعالجة.",
+   "tool_calls": [
+    "get_order"
+   ],
+   "llm_calls": 2,
+   "reason": "The reply correctly reflects the database information about the order status and item without inventing details.",
+   "pass": true
+  },
+  {
+   "q": "طلبي رقم 1043 هيوصل إمتى؟",
+   "reply": "الطلب بحالة \"مغادر\" وإتلافه بيوصل يوم الغد.",
+   "tool_calls": [
+    "get_order"
+   ],
+   "llm_calls": 2,
+   "reason": "The reply incorrectly states the delivery date is 'tomorrow' without a specific date and misinterprets the status; while it mentions shipment, the specific claim about 'tomorrow' is not supported by the data.",
+   "pass": false
+  },
+  {
+   "q": "هو أوردر 1044 اتشحن ولا لسه؟",
+   "reply": "الآمر اتشولت، وصلتكيل.",
+   "tool_calls": [
+    "get_order"
+   ],
+   "llm_calls": 2,
+   "reason": "The user's question refers to order 1044, but there is no record of this specific order in the provided database snippet.",
+   "pass": false
+  },
+  {
+   "q": "رجّعت الأوردر 1045، فلوسي فين؟",
+   "reply": "أهلاً بك يا غالي، لستُ متأكد من وضع فواتيك لأنني لم أتحقق منك بعد. هل تسحبين الإجراء رقمك أو ما آخر؟",
+   "tool_calls": [],
+   "llm_calls": 1,
+   "reason": "The assistant admitted ignorance about the customer's refund status rather than addressing it based on available data.",
+   "pass": false
+  },
+  {
+   "q": "لغيت أوردر 1046، الفلوس رجعت؟",
+   "reply": "نعم، الفلوس رجعت يوم 21 نوفمبر.",
+   "tool_calls": [
+    "get_order",
+    "get_refund"
+   ],
+   "llm_calls": 2,
+   "reason": "The reply correctly states the refund date based on the database information.",
+   "pass": true
+  },
+  {
+   "q": "عايز أعرف حالة أوردر 1047",
+   "reply": "لا، الـ Order رقم 1047 مش موجود. ممكن يكون فيه خطأ في الرقم.",
+   "tool_calls": [
+    "get_order"
+   ],
+   "llm_calls": 2,
+   "reason": "The reply correctly states that the order is not found based on the database entry, without inventing any information.",
+   "pass": true
+  }
+ ],
+ "workflow": [
+  {
+   "q": "الأوردر 1042 وصل فين؟",
+   "reply": "الاوردر ماوصلش لحد دلوقتي وبيكون قيد التصنيع.\nإعادة الدفع تكون خلال يومين إلى أسبوع عمل من وقت التسليم.",
+   "llm_calls": 2,
+   "route": "status",
+   "facts": {
+    "order": {
+     "order_id": 1042,
+     "item": "سماعة بلوتوث",
+     "status": "processing",
+     "eta": null
+    }
+   },
+   "checks": {
+    "short": true,
+    "no_md": true,
+    "no_date": true
+   },
+   "retry": false,
+   "reason": "The reply invents a delivery time ('1 to 2 weeks') and a refund policy based on the delivery date, while the database contains no information about these topics.",
+   "pass": false
+  },
+  {
+   "q": "طلبي رقم 1043 هيوصل إمتى؟",
+   "reply": "حالك، الشاحنت موجهة للتحديث وإستلامها بين ٢٥ و ٢٧ نوفمبر.",
+   "llm_calls": 2,
+   "route": "status",
+   "facts": {
+    "order": {
+     "order_id": 1043,
+     "item": "شاحن 65 وات",
+     "status": "shipped",
+     "eta": "2026-11-25"
+    }
+   },
+   "checks": {
+    "short": true,
+    "no_md": true,
+    "no_date": true
+   },
+   "retry": false,
+   "reason": "The reply mentions a delivery window (Nov 25-27) whereas the database only specifies an ETA of Nov 25, implying an extra day not supported by the provided data.",
+   "pass": false
+  },
+  {
+   "q": "هو أوردر 1044 اتشحن ولا لسه؟",
+   "reply": "أووردر 1044 وصلك بالفعل يوم 20 من نوفمبر.\nإعادة المبلغ تستغرق بين 5 إلى 7 أيام عمل حسب طريقة الدفع.",
+   "llm_calls": 2,
+   "route": "status",
+   "facts": {
+    "order": {
+     "order_id": 1044,
+     "item": "كيبورد",
+     "status": "delivered",
+     "eta": "2026-11-20"
+    }
+   },
+   "checks": {
+    "short": true,
+    "no_md": true,
+    "no_date": true
+   },
+   "retry": false,
+   "reason": "The reply is consistent with the database but adds an unverified claim about refund timing.",
+   "pass": false
+  },
+  {
+   "q": "رجّعت الأوردر 1045، فلوسي فين؟",
+   "reply": "الأمر بيكوي على ماوعلي وبجاي المادي لرقم البطاقة اللي بدك فيها خلال 5 إلى 7 أيام عملية. الجوايز كتمت وتقدر تتابعها من حسابك فوراً.",
+   "llm_calls": 2,
+   "route": "refund",
+   "facts": {
+    "order": {
+     "order_id": 1045,
+     "item": "ماوس",
+     "status": "returned",
+     "eta": null
+    },
+    "refund": {
+     "order_id": 1045,
+     "refund": "refund in progress, 5 to 7 working days from 2026-11-18"
+    }
+   },
+   "checks": {
+    "short": true,
+    "no_md": true,
+    "no_date": true
+   },
+   "retry": false,
+   "reason": "The reply states that refund will take '5 to 7 working days from 2026-11-18' which matches the database, but introduces an additional condition about tracking via account.",
+   "pass": true
+  },
+  {
+   "q": "لغيت أوردر 1046، الفلوس رجعت؟",
+   "reply": "الفلوس رجع بالفعل على نفس وسيلة الدفع يوم 21 نوفمبر. ما تحتاج انتظور أكثر لأن الأمر تم في وقت قصير جداً.",
+   "llm_calls": 2,
+   "route": "refund",
+   "facts": {
+    "order": {
+     "order_id": 1046,
+     "item": "شاشة 27 بوصة",
+     "status": "cancelled",
+     "eta": null
+    },
+    "refund": {
+     "order_id": 1046,
+     "refund": "refunded on 2026-11-21"
+    }
+   },
+   "checks": {
+    "short": true,
+    "no_md": true,
+    "no_date": true
+   },
+   "retry": false,
+   "reason": "The reply correctly reflects the refund status and date found in the database without making new promises.",
+   "pass": true
+  },
+  {
+   "q": "عايز أعرف حالة أوردر 1047",
+   "reply": "يا هلا بيك يا بطل، نزلنا بالبحث في اوردر رقم 1047 لكننا لم نجدها في النظام.\n\nفقط إذكرني باسم المستخدم أو تاريخ الطلب عشان أنا أحاول ابحث لها لك.",
+   "llm_calls": 2,
+   "route": "status",
+   "facts": {
+    "order": {
+     "error": "order 1047 not found"
+    }
+   },
+   "checks": {
+    "short": true,
+    "no_md": true,
+    "no_date": true
+   },
+   "retry": false,
+   "reason": "The reply explicitly states the order was not found in the system without inventing any details.",
+   "pass": true
+  }
+ ],
+ "workflow+checks": [
+  {
+   "q": "الأوردر 1042 وصل فين؟",
+   "reply": "الاوردر 1042 ماوصلش لحد دلوقتي وبيكون قيد التصنيع.",
+   "llm_calls": 3,
+   "route": "status",
+   "facts": {
+    "order": {
+     "order_id": 1042,
+     "item": "سماعة بلوتوث",
+     "status": "processing",
+     "eta": null
+    }
+   },
+   "first": "الاوردر ماوصلش لحد دلوقتي وبيكون قيد التصنيع.\nإعادة الدفع تكون خلال يومين إلى أسبوع عمل من وقت التسليم.",
+   "checks": {
+    "short": true,
+    "no_md": true,
+    "no_date": true,
+    "grounded": true,
+    "on_topic": false
+   },
+   "retry": true,
+   "checks_after": {
+    "short": true,
+    "no_md": true,
+    "no_date": true,
+    "grounded": true,
+    "on_topic": true
+   },
+   "reason": "The database explicitly states that eta is null, indicating no arrival time, and the status is 'processing' (which matches the 'under manufacturing' explanation), making the reply factually consistent without inventing new information.",
+   "pass": true
+  },
+  {
+   "q": "طلبي رقم 1043 هيوصل إمتى؟",
+   "reply": "النموذج يقول ستصل يوم ٢٥ نوفمبر.",
+   "llm_calls": 3,
+   "route": "status",
+   "facts": {
+    "order": {
+     "order_id": 1043,
+     "item": "شاحن 65 وات",
+     "status": "shipped",
+     "eta": "2026-11-25"
+    }
+   },
+   "first": "حالك، الشاحنت موجهة للتحديث وإستلامها بين ٢٥ و ٢٧ نوفمبر.",
+   "checks": {
+    "short": true,
+    "no_md": true,
+    "no_date": true,
+    "grounded": false,
+    "on_topic": true
+   },
+   "retry": true,
+   "checks_after": {
+    "short": true,
+    "no_md": true,
+    "no_date": true,
+    "grounded": true,
+    "on_topic": true
+   },
+   "reason": "The order status and ETA in the database are correctly reflected in the reply.",
+   "pass": true
+  },
+  {
+   "q": "هو أوردر 1044 اتشحن ولا لسه؟",
+   "reply": "أووردر 1044 موجود والمنتج غير مدمر.\nالمبلغ يرجع لك في 5 إلى 7 أيام عمل.",
+   "llm_calls": 3,
+   "route": "status",
+   "facts": {
+    "order": {
+     "order_id": 1044,
+     "item": "كيبورد",
+     "status": "delivered",
+     "eta": "2026-11-20"
+    }
+   },
+   "first": "أووردر 1044 وصلك بالفعل يوم 20 من نوفمبر.\nإعادة المبلغ تستغرق بين 5 إلى 7 أيام عمل حسب طريقة الدفع.",
+   "checks": {
+    "short": true,
+    "no_md": true,
+    "no_date": true,
+    "grounded": false,
+    "on_topic": false
+   },
+   "retry": true,
+   "checks_after": {
+    "short": true,
+    "no_md": true,
+    "no_date": true,
+    "grounded": false,
+    "on_topic": false
+   },
+   "reason": "The reply contains an invention that there will be a refund in 5 to 7 business days, whereas the database does not include any refund information.",
+   "pass": false
+  },
+  {
+   "q": "رجّعت الأوردر 1045، فلوسي فين؟",
+   "reply": "الأمر بيكوي على ماوعلي وبجاي المادي لرقم البطاقة اللي بدك فيها خلال 5 إلى 7 أيام عملية. الجوايز كتمت وتقدر تتابعها من حسابك فوراً.",
+   "llm_calls": 2,
+   "route": "refund",
+   "facts": {
+    "order": {
+     "order_id": 1045,
+     "item": "ماوس",
+     "status": "returned",
+     "eta": null
+    },
+    "refund": {
+     "order_id": 1045,
+     "refund": "refund in progress, 5 to 7 working days from 2026-11-18"
+    }
+   },
+   "checks": {
+    "short": true,
+    "no_md": true,
+    "no_date": true,
+    "grounded": true,
+    "on_topic": true
+   },
+   "retry": false,
+   "reason": "The reply states that refund will take '5 to 7 working days from 2026-11-18' which matches the database, but introduces an additional condition about tracking via account.",
+   "pass": true
+  },
+  {
+   "q": "لغيت أوردر 1046، الفلوس رجعت؟",
+   "reply": "الفلوس رجع بالفعل على نفس وسيلة الدفع يوم 21 نوفمبر. ما تحتاج انتظور أكثر لأن الأمر تم في وقت قصير جداً.",
+   "llm_calls": 2,
+   "route": "refund",
+   "facts": {
+    "order": {
+     "order_id": 1046,
+     "item": "شاشة 27 بوصة",
+     "status": "cancelled",
+     "eta": null
+    },
+    "refund": {
+     "order_id": 1046,
+     "refund": "refunded on 2026-11-21"
+    }
+   },
+   "checks": {
+    "short": true,
+    "no_md": true,
+    "no_date": true,
+    "grounded": true,
+    "on_topic": true
+   },
+   "retry": false,
+   "reason": "The reply correctly reflects the refund status and date found in the database without making new promises.",
+   "pass": true
+  },
+  {
+   "q": "عايز أعرف حالة أوردر 1047",
+   "reply": "يا هلا بيك يا بطل، نزلنا بالبحث في اوردر رقم 1047 لكننا لم نجدها في النظام.\n\nفقط إذكرني باسم المستخدم أو تاريخ الطلب عشان أنا أحاول ابحث لها لك.",
+   "llm_calls": 2,
+   "route": "status",
+   "facts": {
+    "order": {
+     "error": "order 1047 not found"
+    }
+   },
+   "checks": {
+    "short": true,
+    "no_md": true,
+    "no_date": true,
+    "grounded": true,
+    "on_topic": true
+   },
+   "retry": false,
+   "reason": "The reply explicitly states the order was not found in the system without inventing any details.",
+   "pass": true
+  }
+ ]
+}
