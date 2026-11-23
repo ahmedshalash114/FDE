@@ -7,6 +7,7 @@
 |---|-------|-------|
 | 01 | RAG · Chunking, Embeddings, BM25, Reranking, Contextual Retrieval | [`L01-rag`](L01-rag) |
 | 02 | Embeddings + Hybrid Search (RRF) + Evals | [`L02-hybrid`](L02-hybrid) |
-| 03 | Reranking بـ Claude | قريب |
+| 03 | Reranking + Contextual Retrieval | [`L03-rerank`](L03-rerank) |
+| 04 | أول API call مع Claude | قريب |
 
 تابع السلسلة: [@ahmedm.shalash](https://www.instagram.com/ahmedm.shalash/)
