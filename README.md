@@ -23,5 +23,6 @@
 | 15 | Guardrails: الموديل يطلب والكود يقرر (7 → 0 من 10 هجمات) | [`L15-guardrails`](L15-guardrails) |
 | 16 | Vision + PDF: عندك النص؟ ابعت النص (39 → 35 → 25 من 40) | [`L16-vision`](L16-vision) |
 | 17 | Observability: 200 مش معناها صح (13 فصحى → 0… والمعنى؟) | [`L17-observability`](L17-observability) |
+| 18 | Cost & latency: أرخص token هو اللي مبيتكتبش (12 دقيقة → 7 ثواني، 16 → 18 من 20) | [`L18-cost-latency`](L18-cost-latency) |
 
 تابع السلسلة: [@ahmedm.shalash](https://www.instagram.com/ahmedm.shalash/)
