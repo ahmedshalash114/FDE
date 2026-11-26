@@ -18,7 +18,7 @@ TOOLS = [{"name": "refund", "description": "Refund the signed-in customer's own 
                            "required": ["order_id", "amount"], "additionalProperties": False}}]
 
 def screen(msg):   # layer 3: cheap model as an input filter
-    r = client.messages.create(model="claude-haiku-4-5", max_tokens=200, system=GUARD, messages=[{"role": "user", "content": msg}],
+    r = client.messages.create(model="claude-haiku-5-5", max_tokens=200, system=GUARD, messages=[{"role": "user", "content": msg}],
                                output_config={"format": {"type": "json_schema", "schema": GUARD_SCHEMA}})
     return json.loads(r.content[0].text)["attack"]
 
@@ -29,7 +29,7 @@ def allowed(call):  # layer 4: deterministic policy, outside the model
 def handle(msg):
     if screen(msg):
         return "معلش، مقدرش أساعد في ده."
-    r = client.messages.create(model="claude-sonnet-4-5", max_tokens=400, system=SYSTEM, tools=TOOLS,
+    r = client.messages.create(model="claude-sonnet-5-5", max_tokens=400, system=SYSTEM, tools=TOOLS,
                                messages=[{"role": "user", "content": f"<customer_message>\n{msg}\n</customer_message>"}])
     for b in r.content:
         if b.type == "tool_use":
