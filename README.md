@@ -21,5 +21,7 @@
 | 13 | Memory: الموديل مبيفتكرش… احفظ كلام العميل بس (0 → 3 من 5) | [`L13-memory`](L13-memory) |
 | 14 | Multi-agent: ابدأ بـ agent واحد، وقسّم لما الـ context ميكفيش (16 → 19 من 23) | [`L14-multi-agent`](L14-multi-agent) |
 | 15 | Guardrails: الموديل يطلب والكود يقرر (7 → 0 من 10 هجمات) | [`L15-guardrails`](L15-guardrails) |
+| 16 | Vision + PDF: عندك النص؟ ابعت النص (39 → 35 → 25 من 40) | [`L16-vision`](L16-vision) |
+| 17 | Observability: 200 مش معناها صح (13 فصحى → 0… والمعنى؟) | [`L17-observability`](L17-observability) |
 
 تابع السلسلة: [@ahmedm.shalash](https://www.instagram.com/ahmedm.shalash/)
