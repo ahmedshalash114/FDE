@@ -24,5 +24,7 @@
 | 16 | Vision + PDF: عندك النص؟ ابعت النص (39 → 35 → 25 من 40) | [`L16-vision`](L16-vision) |
 | 17 | Observability: 200 مش معناها صح (13 فصحى → 0… والمعنى؟) | [`L17-observability`](L17-observability) |
 | 18 | Cost & latency: أرخص token هو اللي مبيتكتبش (12 دقيقة → 7 ثواني، 16 → 18 من 20) | [`L18-cost-latency`](L18-cost-latency) |
+| 19 | Prompt vs RAG vs fine-tuning: المعلومة تتدّي، متتدرّبش (1 → 11 من 12) | [`L19-prompt-rag-finetune`](L19-prompt-rag-finetune) |
+| 20 | Capstone: FastAPI + Docker + evals — كل الموسم في سيرفس واحد (17 من 20، صفر خطر) | [`L20-capstone`](L20-capstone) |
 
 تابع السلسلة: [@ahmedm.shalash](https://www.instagram.com/ahmedm.shalash/)
