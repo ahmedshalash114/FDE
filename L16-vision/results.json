@@ -1,0 +1,722 @@
+[
+{
+"no": "INV-2026-0602",
+"mode": "text",
+"out": {
+"invoice_no": "INV-2026-0602",
+"date": "2026-09-21",
+"total": 7535.4,
+"items": 2
+},
+"ok": {
+"invoice_no": true,
+"date": true,
+"total": true,
+"items": true
+},
+"ms": 4747,
+"prompt_tokens": 213,
+"gold": {
+"invoice_no": "INV-2026-0602",
+"date": "2026-09-21",
+"total": 7535.4,
+"items": 2
+}
+},
+{
+"no": "INV-2026-0602",
+"mode": "clean",
+"out": {
+"invoice_no": "INV-2026-0602",
+"date": "2026-09-21",
+"total": 7535.4,
+"items": 2
+},
+"ok": {
+"invoice_no": true,
+"date": true,
+"total": true,
+"items": true
+},
+"ms": 5680,
+"prompt_tokens": 831,
+"gold": {
+"invoice_no": "INV-2026-0602",
+"date": "2026-09-21",
+"total": 7535.4,
+"items": 2
+}
+},
+{
+"no": "INV-2026-0602",
+"mode": "photo",
+"out": {
+"invoice_no": "INV-2026-0682",
+"date": "2026-09-21",
+"total": 7535.4,
+"items": 2
+},
+"ok": {
+"invoice_no": false,
+"date": true,
+"total": true,
+"items": true
+},
+"ms": 3185,
+"prompt_tokens": 356,
+"gold": {
+"invoice_no": "INV-2026-0602",
+"date": "2026-09-21",
+"total": 7535.4,
+"items": 2
+}
+},
+{
+"no": "INV-2026-0380",
+"mode": "text",
+"out": {
+"invoice_no": "INV-2026-0380",
+"date": "2026-10-02",
+"total": 34775.7,
+"items": 6
+},
+"ok": {
+"invoice_no": true,
+"date": true,
+"total": true,
+"items": false
+},
+"ms": 2575,
+"prompt_tokens": 292,
+"gold": {
+"invoice_no": "INV-2026-0380",
+"date": "2026-10-02",
+"total": 34775.7,
+"items": 5
+}
+},
+{
+"no": "INV-2026-0380",
+"mode": "clean",
+"out": {
+"invoice_no": "INV-2026-0380",
+"date": "2026-10-02",
+"total": 34775.7,
+"items": 5
+},
+"ok": {
+"invoice_no": true,
+"date": true,
+"total": true,
+"items": true
+},
+"ms": 5190,
+"prompt_tokens": 831,
+"gold": {
+"invoice_no": "INV-2026-0380",
+"date": "2026-10-02",
+"total": 34775.7,
+"items": 5
+}
+},
+{
+"no": "INV-2026-0380",
+"mode": "photo",
+"out": {
+"invoice_no": "INV-2026-0388",
+"date": "2026-10-02",
+"total": 34775.7,
+"items": 5
+},
+"ok": {
+"invoice_no": false,
+"date": true,
+"total": true,
+"items": true
+},
+"ms": 3245,
+"prompt_tokens": 356,
+"gold": {
+"invoice_no": "INV-2026-0380",
+"date": "2026-10-02",
+"total": 34775.7,
+"items": 5
+}
+},
+{
+"no": "INV-2026-0431",
+"mode": "text",
+"out": {
+"invoice_no": "INV-2026-0431",
+"date": "2026-11-16",
+"total": 19619.4,
+"items": 4
+},
+"ok": {
+"invoice_no": true,
+"date": true,
+"total": true,
+"items": true
+},
+"ms": 2562,
+"prompt_tokens": 267,
+"gold": {
+"invoice_no": "INV-2026-0431",
+"date": "2026-11-16",
+"total": 19619.4,
+"items": 4
+}
+},
+{
+"no": "INV-2026-0431",
+"mode": "clean",
+"out": {
+"invoice_no": "INV-2026-0431",
+"date": "2026-01-16",
+"total": 196194,
+"items": 4
+},
+"ok": {
+"invoice_no": true,
+"date": false,
+"total": false,
+"items": true
+},
+"ms": 5170,
+"prompt_tokens": 831,
+"gold": {
+"invoice_no": "INV-2026-0431",
+"date": "2026-11-16",
+"total": 19619.4,
+"items": 4
+}
+},
+{
+"no": "INV-2026-0431",
+"mode": "photo",
+"out": {
+"invoice_no": "INV-2026-0431",
+"date": "2025-07-09",
+"total": 1995831.4,
+"items": 5
+},
+"ok": {
+"invoice_no": true,
+"date": false,
+"total": false,
+"items": false
+},
+"ms": 3286,
+"prompt_tokens": 356,
+"gold": {
+"invoice_no": "INV-2026-0431",
+"date": "2026-11-16",
+"total": 19619.4,
+"items": 4
+}
+},
+{
+"no": "INV-2026-0373",
+"mode": "text",
+"out": {
+"invoice_no": "INV-2026-0373",
+"date": "2026-09-03",
+"total": 10875.6,
+"items": 2
+},
+"ok": {
+"invoice_no": true,
+"date": true,
+"total": true,
+"items": true
+},
+"ms": 2454,
+"prompt_tokens": 214,
+"gold": {
+"invoice_no": "INV-2026-0373",
+"date": "2026-09-03",
+"total": 10875.6,
+"items": 2
+}
+},
+{
+"no": "INV-2026-0373",
+"mode": "clean",
+"out": {
+"invoice_no": "INV-2026-0373",
+"date": "2026-09-03",
+"total": 10875.6,
+"items": 2
+},
+"ok": {
+"invoice_no": true,
+"date": true,
+"total": true,
+"items": true
+},
+"ms": 5239,
+"prompt_tokens": 831,
+"gold": {
+"invoice_no": "INV-2026-0373",
+"date": "2026-09-03",
+"total": 10875.6,
+"items": 2
+}
+},
+{
+"no": "INV-2026-0373",
+"mode": "photo",
+"out": {
+"invoice_no": "INV-2026-0373",
+"date": "2026-09-03",
+"total": 10875.6,
+"items": 2
+},
+"ok": {
+"invoice_no": true,
+"date": true,
+"total": true,
+"items": true
+},
+"ms": 3202,
+"prompt_tokens": 356,
+"gold": {
+"invoice_no": "INV-2026-0373",
+"date": "2026-09-03",
+"total": 10875.6,
+"items": 2
+}
+},
+{
+"no": "INV-2026-0889",
+"mode": "text",
+"out": {
+"invoice_no": "INV-2026-0889",
+"date": "2026-10-08",
+"total": 31771.8,
+"items": 5
+},
+"ok": {
+"invoice_no": true,
+"date": true,
+"total": true,
+"items": true
+},
+"ms": 2637,
+"prompt_tokens": 299,
+"gold": {
+"invoice_no": "INV-2026-0889",
+"date": "2026-10-08",
+"total": 31771.8,
+"items": 5
+}
+},
+{
+"no": "INV-2026-0889",
+"mode": "clean",
+"out": {
+"invoice_no": "INV-2026-0889",
+"date": "2026-10-08",
+"total": 31771.8,
+"items": 5
+},
+"ok": {
+"invoice_no": true,
+"date": true,
+"total": true,
+"items": true
+},
+"ms": 5487,
+"prompt_tokens": 831,
+"gold": {
+"invoice_no": "INV-2026-0889",
+"date": "2026-10-08",
+"total": 31771.8,
+"items": 5
+}
+},
+{
+"no": "INV-2026-0889",
+"mode": "photo",
+"out": {
+"invoice_no": "INV-2026-8889",
+"date": "2026-10-05",
+"total": 31771.8,
+"items": 5
+},
+"ok": {
+"invoice_no": false,
+"date": false,
+"total": true,
+"items": true
+},
+"ms": 3901,
+"prompt_tokens": 356,
+"gold": {
+"invoice_no": "INV-2026-0889",
+"date": "2026-10-08",
+"total": 31771.8,
+"items": 5
+}
+},
+{
+"no": "INV-2026-0584",
+"mode": "text",
+"out": {
+"invoice_no": "INV-2026-0584",
+"date": "2026-11-02",
+"total": 11388.6,
+"items": 4
+},
+"ok": {
+"invoice_no": true,
+"date": true,
+"total": true,
+"items": true
+},
+"ms": 2563,
+"prompt_tokens": 267,
+"gold": {
+"invoice_no": "INV-2026-0584",
+"date": "2026-11-02",
+"total": 11388.6,
+"items": 4
+}
+},
+{
+"no": "INV-2026-0584",
+"mode": "clean",
+"out": {
+"invoice_no": "INV-2026-0584",
+"date": "2021-12-02",
+"total": 999,
+"items": 4
+},
+"ok": {
+"invoice_no": true,
+"date": false,
+"total": false,
+"items": true
+},
+"ms": 5118,
+"prompt_tokens": 831,
+"gold": {
+"invoice_no": "INV-2026-0584",
+"date": "2026-11-02",
+"total": 11388.6,
+"items": 4
+}
+},
+{
+"no": "INV-2026-0584",
+"mode": "photo",
+"out": {
+"invoice_no": "INV-2026-0584",
+"date": "2017-03-09",
+"total": 1138860,
+"items": 3
+},
+"ok": {
+"invoice_no": true,
+"date": false,
+"total": false,
+"items": false
+},
+"ms": 3211,
+"prompt_tokens": 356,
+"gold": {
+"invoice_no": "INV-2026-0584",
+"date": "2026-11-02",
+"total": 11388.6,
+"items": 4
+}
+},
+{
+"no": "INV-2026-0407",
+"mode": "text",
+"out": {
+"invoice_no": "INV-2026-0407",
+"date": "2026-09-01",
+"total": 13588.8,
+"items": 3
+},
+"ok": {
+"invoice_no": true,
+"date": true,
+"total": true,
+"items": true
+},
+"ms": 2469,
+"prompt_tokens": 238,
+"gold": {
+"invoice_no": "INV-2026-0407",
+"date": "2026-09-01",
+"total": 13588.8,
+"items": 3
+}
+},
+{
+"no": "INV-2026-0407",
+"mode": "clean",
+"out": {
+"invoice_no": "INV-2026-0407",
+"date": "2026-09-01",
+"total": 13588.8,
+"items": 3
+},
+"ok": {
+"invoice_no": true,
+"date": true,
+"total": true,
+"items": true
+},
+"ms": 5282,
+"prompt_tokens": 831,
+"gold": {
+"invoice_no": "INV-2026-0407",
+"date": "2026-09-01",
+"total": 13588.8,
+"items": 3
+}
+},
+{
+"no": "INV-2026-0407",
+"mode": "photo",
+"out": {
+"invoice_no": "INV-2026-0487",
+"date": "2026-09-01",
+"total": 13588.8,
+"items": 3
+},
+"ok": {
+"invoice_no": false,
+"date": true,
+"total": true,
+"items": true
+},
+"ms": 3229,
+"prompt_tokens": 356,
+"gold": {
+"invoice_no": "INV-2026-0407",
+"date": "2026-09-01",
+"total": 13588.8,
+"items": 3
+}
+},
+{
+"no": "INV-2026-0333",
+"mode": "text",
+"out": {
+"invoice_no": "INV-2026-0333",
+"date": "2026-10-22",
+"total": 3670.8,
+"items": 2
+},
+"ok": {
+"invoice_no": true,
+"date": true,
+"total": true,
+"items": true
+},
+"ms": 2419,
+"prompt_tokens": 216,
+"gold": {
+"invoice_no": "INV-2026-0333",
+"date": "2026-10-22",
+"total": 3670.8,
+"items": 2
+}
+},
+{
+"no": "INV-2026-0333",
+"mode": "clean",
+"out": {
+"invoice_no": "INV-2026-0333",
+"date": "2026-10-22",
+"total": 3670.8,
+"items": 2
+},
+"ok": {
+"invoice_no": true,
+"date": true,
+"total": true,
+"items": true
+},
+"ms": 5145,
+"prompt_tokens": 831,
+"gold": {
+"invoice_no": "INV-2026-0333",
+"date": "2026-10-22",
+"total": 3670.8,
+"items": 2
+}
+},
+{
+"no": "INV-2026-0333",
+"mode": "photo",
+"out": {
+"invoice_no": "INV-2026-0333",
+"date": "2026-10-22",
+"total": 3670.8,
+"items": 2
+},
+"ok": {
+"invoice_no": true,
+"date": true,
+"total": true,
+"items": true
+},
+"ms": 3182,
+"prompt_tokens": 356,
+"gold": {
+"invoice_no": "INV-2026-0333",
+"date": "2026-10-22",
+"total": 3670.8,
+"items": 2
+}
+},
+{
+"no": "INV-2026-0309",
+"mode": "text",
+"out": {
+"invoice_no": "INV-2026-0309",
+"date": "2026-11-25",
+"total": 4731,
+"items": 2
+},
+"ok": {
+"invoice_no": true,
+"date": true,
+"total": true,
+"items": true
+},
+"ms": 2381,
+"prompt_tokens": 217,
+"gold": {
+"invoice_no": "INV-2026-0309",
+"date": "2026-11-25",
+"total": 4731,
+"items": 2
+}
+},
+{
+"no": "INV-2026-0309",
+"mode": "clean",
+"out": {
+"invoice_no": "INV-2026-0309",
+"date": "2026-11-25",
+"total": 473100,
+"items": 2
+},
+"ok": {
+"invoice_no": true,
+"date": true,
+"total": false,
+"items": true
+},
+"ms": 5219,
+"prompt_tokens": 831,
+"gold": {
+"invoice_no": "INV-2026-0309",
+"date": "2026-11-25",
+"total": 4731,
+"items": 2
+}
+},
+{
+"no": "INV-2026-0309",
+"mode": "photo",
+"out": {
+"invoice_no": "INV-2026-0389",
+"date": "2025-11-24",
+"total": 473100,
+"items": 2
+},
+"ok": {
+"invoice_no": false,
+"date": false,
+"total": false,
+"items": true
+},
+"ms": 3194,
+"prompt_tokens": 356,
+"gold": {
+"invoice_no": "INV-2026-0309",
+"date": "2026-11-25",
+"total": 4731,
+"items": 2
+}
+},
+{
+"no": "INV-2026-0738",
+"mode": "text",
+"out": {
+"invoice_no": "INV-2026-0738",
+"date": "2026-09-25",
+"total": 3648,
+"items": 2
+},
+"ok": {
+"invoice_no": true,
+"date": true,
+"total": true,
+"items": true
+},
+"ms": 2345,
+"prompt_tokens": 210,
+"gold": {
+"invoice_no": "INV-2026-0738",
+"date": "2026-09-25",
+"total": 3648,
+"items": 2
+}
+},
+{
+"no": "INV-2026-0738",
+"mode": "clean",
+"out": {
+"invoice_no": "INV-2026-0738",
+"date": "2026-09-25",
+"total": 3648,
+"items": 2
+},
+"ok": {
+"invoice_no": true,
+"date": true,
+"total": true,
+"items": true
+},
+"ms": 5161,
+"prompt_tokens": 831,
+"gold": {
+"invoice_no": "INV-2026-0738",
+"date": "2026-09-25",
+"total": 3648,
+"items": 2
+}
+},
+{
+"no": "INV-2026-0738",
+"mode": "photo",
+"out": {
+"invoice_no": "INV-2026-0738",
+"date": "2026-05-25",
+"total": 3648,
+"items": 2
+},
+"ok": {
+"invoice_no": true,
+"date": false,
+"total": true,
+"items": true
+},
+"ms": 3189,
+"prompt_tokens": 356,
+"gold": {
+"invoice_no": "INV-2026-0738",
+"date": "2026-09-25",
+"total": 3648,
+"items": 2
+}
+}
+]
