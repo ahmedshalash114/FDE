@@ -19,5 +19,7 @@
 | 11 | Prompt Caching: الثابت فوق والمتغير تحت (31.8s → 16.3s) | [`L11-caching`](L11-caching) |
 | 12 | Structured Outputs: الـ schema بيضمن الشكل والقواعد بتضمن المعنى (8 → 15 من 20) | [`L12-structured`](L12-structured) |
 | 13 | Memory: الموديل مبيفتكرش… احفظ كلام العميل بس (0 → 3 من 5) | [`L13-memory`](L13-memory) |
+| 14 | Multi-agent: ابدأ بـ agent واحد، وقسّم لما الـ context ميكفيش (16 → 19 من 23) | [`L14-multi-agent`](L14-multi-agent) |
+| 15 | Guardrails: الموديل يطلب والكود يقرر (7 → 0 من 10 هجمات) | [`L15-guardrails`](L15-guardrails) |
 
 تابع السلسلة: [@ahmedm.shalash](https://www.instagram.com/ahmedm.shalash/)
