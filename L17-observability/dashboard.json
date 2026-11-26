@@ -1,0 +1,26 @@
+{
+ "v1": {
+  "calls": 20,
+  "http_ok": 20,
+  "p50_ms": 1606,
+  "p95_ms": 4982,
+  "avg_output_tokens": 43,
+  "fusha": 13,
+  "too_long": 0,
+  "promise": 2,
+  "slow": 1,
+  "clean": 6
+ },
+ "v2": {
+  "calls": 20,
+  "http_ok": 20,
+  "p50_ms": 1525,
+  "p95_ms": 1802,
+  "avg_output_tokens": 30,
+  "fusha": 0,
+  "too_long": 0,
+  "promise": 0,
+  "slow": 0,
+  "clean": 20
+ }
+}
