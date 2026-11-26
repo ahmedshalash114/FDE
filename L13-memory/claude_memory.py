@@ -11,7 +11,7 @@ from pathlib import Path
 import anthropic
 
 client = anthropic.Anthropic()
-MODEL = "claude-sonnet-4-5"
+MODEL = "claude-sonnet-5-5"
 ROOT = Path("claude_memories")          # what Claude calls /memories lives here, one folder per customer
 
 SYSTEM = ("You are Mona, the support agent of Mona Store (Egypt). Answer in Egyptian Arabic, in at most two short sentences. "
