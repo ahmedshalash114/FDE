@@ -1,0 +1,1050 @@
+{
+ "prompt": [
+  {
+   "message": "الأوردر 1042 لسه موصلش، هو فين؟",
+   "gold": [
+    1042,
+    "status",
+    false
+   ],
+   "raw": "{\"order_id\": 1042, \"intent\": \"status\", \"urgent\": true}",
+   "json": true,
+   "schema": true,
+   "correct": false,
+   "why": "got {'order_id': 1042, 'intent': 'status', 'urgent': True}"
+  },
+  {
+   "message": "عايز أرجّع الجزمة اللي في أوردر 1051، المقاس طلع صغير",
+   "gold": [
+    1051,
+    "refund",
+    false
+   ],
+   "raw": "{\"order_id\": 1051, \"intent\": \"refund\", \"urgent\": true}",
+   "json": true,
+   "schema": true,
+   "correct": false,
+   "why": "got {'order_id': 1051, 'intent': 'refund', 'urgent': True}"
+  },
+  {
+   "message": "الغوا الأوردر 1060 بسرعة لو سمحتم قبل ما يتشحن!!",
+   "gold": [
+    1060,
+    "cancel",
+    true
+   ],
+   "raw": "{\"order_id\": 1060, \"intent\": \"cancel\", \"urgent\": true}",
+   "json": true,
+   "schema": true,
+   "correct": true,
+   "why": ""
+  },
+  {
+   "message": "المندوب كان قليل الذوق جدا ورمى الكرتونة على الأرض",
+   "gold": [
+    null,
+    "complaint",
+    false
+   ],
+   "raw": "{\"order_id\": null, \"intent\": \"complaint\", \"urgent\": true}",
+   "json": true,
+   "schema": true,
+   "correct": false,
+   "why": "got {'order_id': None, 'intent': 'complaint', 'urgent': True}"
+  },
+  {
+   "message": "انا مسافر بكرة الصبح والأوردر 1043 لازم يوصل النهارده ضروري",
+   "gold": [
+    1043,
+    "status",
+    true
+   ],
+   "raw": "{\"order_id\": 1043, \"intent\": \"other\", \"urgent\": true}",
+   "json": true,
+   "schema": true,
+   "correct": false,
+   "why": "got {'order_id': 1043, 'intent': 'other', 'urgent': True}"
+  },
+  {
+   "message": "فلوس المرتجع بتاع 1045 لسه مرجعتش ليه؟ بقالها أسبوعين",
+   "gold": [
+    1045,
+    "refund",
+    false
+   ],
+   "raw": "{\"order_id\": 1045, \"intent\": \"refund\", \"urgent\": true}",
+   "json": true,
+   "schema": true,
+   "correct": false,
+   "why": "got {'order_id': 1045, 'intent': 'refund', 'urgent': True}"
+  },
+  {
+   "message": "عندكم شاحن 65 وات؟",
+   "gold": [
+    null,
+    "other",
+    false
+   ],
+   "raw": "{\"order_id\": null, \"intent\": \"other\", \"urgent\": false}",
+   "json": true,
+   "schema": true,
+   "correct": true,
+   "why": ""
+  },
+  {
+   "message": "الشاشة اللي جت في 1072 مكسورة، عايز فلوسي",
+   "gold": [
+    1072,
+    "refund",
+    true
+   ],
+   "raw": "{\"order_id\": 1072, \"intent\": \"complaint\", \"urgent\": true}",
+   "json": true,
+   "schema": true,
+   "correct": false,
+   "why": "got {'order_id': 1072, 'intent': 'complaint', 'urgent': True}"
+  },
+  {
+   "message": "ممكن أغيّر العنوان بتاع أوردر 1080؟",
+   "gold": [
+    1080,
+    "other",
+    false
+   ],
+   "raw": "{\"order_id\": 1080, \"intent\": \"cancel\", \"urgent\": true}",
+   "json": true,
+   "schema": true,
+   "correct": false,
+   "why": "got {'order_id': 1080, 'intent': 'cancel', 'urgent': True}"
+  },
+  {
+   "message": "انا طلبت بالغلط، كنسل الطلب رقم ١٠٨٥",
+   "gold": [
+    1085,
+    "cancel",
+    false
+   ],
+   "raw": "{\"order_id\": 1085, \"intent\": \"cancel\", \"urgent\": true}",
+   "json": true,
+   "schema": true,
+   "correct": false,
+   "why": "got {'order_id': 1085, 'intent': 'cancel', 'urgent': True}"
+  },
+  {
+   "message": "بقالي ساعة على خدمة العملاء محدش بيرد، ده مش احترام",
+   "gold": [
+    null,
+    "complaint",
+    false
+   ],
+   "raw": "{\"order_id\": null, \"intent\": \"complaint\", \"urgent\": true}",
+   "json": true,
+   "schema": true,
+   "correct": false,
+   "why": "got {'order_id': None, 'intent': 'complaint', 'urgent': True}"
+  },
+  {
+   "message": "أوردر 1090 اتشحن ولا لسه؟",
+   "gold": [
+    1090,
+    "status",
+    false
+   ],
+   "raw": "{\"order_id\": 1090, \"intent\": \"status\", \"urgent\": false}",
+   "json": true,
+   "schema": true,
+   "correct": true,
+   "why": ""
+  },
+  {
+   "message": "الفاتورة بتاعة 1094 فيها ضريبة غلط",
+   "gold": [
+    1094,
+    "complaint",
+    false
+   ],
+   "raw": "{\"order_id\": 1094, \"intent\": \"complaint\", \"urgent\": false}",
+   "json": true,
+   "schema": true,
+   "correct": true,
+   "why": ""
+  },
+  {
+   "message": "عايز استرجع فلوس السماعة، رقم الطلب 1101",
+   "gold": [
+    1101,
+    "refund",
+    false
+   ],
+   "raw": "{\"order_id\": 1101, \"intent\": \"refund\", \"urgent\": true}",
+   "json": true,
+   "schema": true,
+   "correct": false,
+   "why": "got {'order_id': 1101, 'intent': 'refund', 'urgent': True}"
+  },
+  {
+   "message": "حد يرد عليا الأوردر 1103 اتأخر ٣ أيام وانا محتاجه للشغل حالاً",
+   "gold": [
+    1103,
+    "status",
+    true
+   ],
+   "raw": "{\"order_id\": 1103, \"intent\": \"status\", \"urgent\": true}",
+   "json": true,
+   "schema": true,
+   "correct": true,
+   "why": ""
+  },
+  {
+   "message": "بتوصلوا أسوان؟",
+   "gold": [
+    null,
+    "other",
+    false
+   ],
+   "raw": "{\"order_id\": null, \"intent\": \"other\", \"urgent\": false}",
+   "json": true,
+   "schema": true,
+   "correct": true,
+   "why": ""
+  },
+  {
+   "message": "الغي طلبي 1110 لاقيته أرخص في حتة تانية",
+   "gold": [
+    1110,
+    "cancel",
+    false
+   ],
+   "raw": "{\"order_id\": 1110, \"intent\": \"cancel\", \"urgent\": false}",
+   "json": true,
+   "schema": true,
+   "correct": true,
+   "why": ""
+  },
+  {
+   "message": "جالي لون غلط في أوردر 1115، عايز أبدّله",
+   "gold": [
+    1115,
+    "refund",
+    false
+   ],
+   "raw": "{\"order_id\": 1115, \"intent\": \"complaint\", \"urgent\": true}",
+   "json": true,
+   "schema": true,
+   "correct": false,
+   "why": "got {'order_id': 1115, 'intent': 'complaint', 'urgent': True}"
+  },
+  {
+   "message": "ده تالت مرة الطلب يتأجل!!! أوردر 1120، هعمل شكوى في جهاز حماية المستهلك",
+   "gold": [
+    1120,
+    "complaint",
+    true
+   ],
+   "raw": "{\"order_id\": 1120, \"intent\": \"complaint\", \"urgent\": true}",
+   "json": true,
+   "schema": true,
+   "correct": true,
+   "why": ""
+  },
+  {
+   "message": "شكرا الطلب وصل بسرعة 👌",
+   "gold": [
+    null,
+    "other",
+    false
+   ],
+   "raw": "{\"order_id\": null, \"intent\": \"other\", \"urgent\": false}",
+   "json": true,
+   "schema": true,
+   "correct": true,
+   "why": ""
+  }
+ ],
+ "prefill": [
+  {
+   "message": "الأوردر 1042 لسه موصلش، هو فين؟",
+   "gold": [
+    1042,
+    "status",
+    false
+   ],
+   "raw": "{\n\"order_id\": 1042,\n\"intent\": \"status\",\n\"urgent\": true\n}",
+   "json": true,
+   "schema": true,
+   "correct": false,
+   "why": "got {'order_id': 1042, 'intent': 'status', 'urgent': True}"
+  },
+  {
+   "message": "عايز أرجّع الجزمة اللي في أوردر 1051، المقاس طلع صغير",
+   "gold": [
+    1051,
+    "refund",
+    false
+   ],
+   "raw": "{\n\"order_id\": 1051,\n\"intent\": \"refund\",\n\"urgent\": false\n}",
+   "json": true,
+   "schema": true,
+   "correct": true,
+   "why": ""
+  },
+  {
+   "message": "الغوا الأوردر 1060 بسرعة لو سمحتم قبل ما يتشحن!!",
+   "gold": [
+    1060,
+    "cancel",
+    true
+   ],
+   "raw": "{...}",
+   "json": false,
+   "schema": false,
+   "correct": false,
+   "why": "not JSON"
+  },
+  {
+   "message": "المندوب كان قليل الذوق جدا ورمى الكرتونة على الأرض",
+   "gold": [
+    null,
+    "complaint",
+    false
+   ],
+   "raw": "{\n\"order_id\": null,\n\"intent\": \"complaint\",\n\"urgency\": false\n}",
+   "json": true,
+   "schema": false,
+   "correct": false,
+   "why": "missing urgent, extra key urgency"
+  },
+  {
+   "message": "انا مسافر بكرة الصبح والأوردر 1043 لازم يوصل النهارده ضروري",
+   "gold": [
+    1043,
+    "status",
+    true
+   ],
+   "raw": "{\n\"order_id\": 1043,\n\"intent\": \"status\",\n\"urgent\": true\n}",
+   "json": true,
+   "schema": true,
+   "correct": true,
+   "why": ""
+  },
+  {
+   "message": "فلوس المرتجع بتاع 1045 لسه مرجعتش ليه؟ بقالها أسبوعين",
+   "gold": [
+    1045,
+    "refund",
+    false
+   ],
+   "raw": "{ \"order_id\": 1045, \"intent\": \"refund\", \"urgent\": true }",
+   "json": true,
+   "schema": true,
+   "correct": false,
+   "why": "got {'order_id': 1045, 'intent': 'refund', 'urgent': True}"
+  },
+  {
+   "message": "عندكم شاحن 65 وات؟",
+   "gold": [
+    null,
+    "other",
+    false
+   ],
+   "raw": "{\n    \"order_id\": null,\n    \"intent\": \"other\",\n    \"urgent\": false\n}",
+   "json": true,
+   "schema": true,
+   "correct": true,
+   "why": ""
+  },
+  {
+   "message": "الشاشة اللي جت في 1072 مكسورة، عايز فلوسي",
+   "gold": [
+    1072,
+    "refund",
+    true
+   ],
+   "raw": "{\n  \"order_id\": 1072,\n  \"intent\": \"complaint\",\n  \"urgent\": true\n}",
+   "json": true,
+   "schema": true,
+   "correct": false,
+   "why": "got {'order_id': 1072, 'intent': 'complaint', 'urgent': True}"
+  },
+  {
+   "message": "ممكن أغيّر العنوان بتاع أوردر 1080؟",
+   "gold": [
+    1080,
+    "other",
+    false
+   ],
+   "raw": "{",
+   "json": false,
+   "schema": false,
+   "correct": false,
+   "why": "not JSON"
+  },
+  {
+   "message": "انا طلبت بالغلط، كنسل الطلب رقم ١٠٨٥",
+   "gold": [
+    1085,
+    "cancel",
+    false
+   ],
+   "raw": "{\n\"order_id\": 1085,\n\"intent\": \"cancel\",\n\"urgent\": true\n}",
+   "json": true,
+   "schema": true,
+   "correct": false,
+   "why": "got {'order_id': 1085, 'intent': 'cancel', 'urgent': True}"
+  },
+  {
+   "message": "بقالي ساعة على خدمة العملاء محدش بيرد، ده مش احترام",
+   "gold": [
+    null,
+    "complaint",
+    false
+   ],
+   "raw": "{ \"order_id\": null, \"intent\": \"complaint\", \"urgent\": true }",
+   "json": true,
+   "schema": true,
+   "correct": false,
+   "why": "got {'order_id': None, 'intent': 'complaint', 'urgent': True}"
+  },
+  {
+   "message": "أوردر 1090 اتشحن ولا لسه؟",
+   "gold": [
+    1090,
+    "status",
+    false
+   ],
+   "raw": "{\n\"order_id\": 1090,\n\"intent\": \"status\",\n\"urgent\": false\n}",
+   "json": true,
+   "schema": true,
+   "correct": true,
+   "why": ""
+  },
+  {
+   "message": "الفاتورة بتاعة 1094 فيها ضريبة غلط",
+   "gold": [
+    1094,
+    "complaint",
+    false
+   ],
+   "raw": "{\n\"order_id\": 1094,\n\"intent\": \"complaint\",\n\"urgent\": false\n}",
+   "json": true,
+   "schema": true,
+   "correct": true,
+   "why": ""
+  },
+  {
+   "message": "عايز استرجع فلوس السماعة، رقم الطلب 1101",
+   "gold": [
+    1101,
+    "refund",
+    false
+   ],
+   "raw": "{\n  \"order_id\": 1101,\n  \"intent\": \"refund\",\n  \"urgent\": true\n}",
+   "json": true,
+   "schema": true,
+   "correct": false,
+   "why": "got {'order_id': 1101, 'intent': 'refund', 'urgent': True}"
+  },
+  {
+   "message": "حد يرد عليا الأوردر 1103 اتأخر ٣ أيام وانا محتاجه للشغل حالاً",
+   "gold": [
+    1103,
+    "status",
+    true
+   ],
+   "raw": "{\n    \"order_id\": 1103,\n    \"intent\": \"status\",\n    \"urgent\": true\n}",
+   "json": true,
+   "schema": true,
+   "correct": true,
+   "why": ""
+  },
+  {
+   "message": "بتوصلوا أسوان؟",
+   "gold": [
+    null,
+    "other",
+    false
+   ],
+   "raw": "{\n  \"order_id\": null,\n  \"intent\": \"other\",\n  \"urgent\": false\n}",
+   "json": true,
+   "schema": true,
+   "correct": true,
+   "why": ""
+  },
+  {
+   "message": "الغي طلبي 1110 لاقيته أرخص في حتة تانية",
+   "gold": [
+    1110,
+    "cancel",
+    false
+   ],
+   "raw": "{\n  \"order_id\": null,\n  \"intent\": \"complaint\",\n  \"urgent\": true\n}",
+   "json": true,
+   "schema": true,
+   "correct": false,
+   "why": "got {'order_id': None, 'intent': 'complaint', 'urgent': True}"
+  },
+  {
+   "message": "جالي لون غلط في أوردر 1115، عايز أبدّله",
+   "gold": [
+    1115,
+    "refund",
+    false
+   ],
+   "raw": "{\n\"order_id\": 1115,\n\"intent\": \"complaint\",\n\"urgent\": true\n}",
+   "json": true,
+   "schema": true,
+   "correct": false,
+   "why": "got {'order_id': 1115, 'intent': 'complaint', 'urgent': True}"
+  },
+  {
+   "message": "ده تالت مرة الطلب يتأجل!!! أوردر 1120، هعمل شكوى في جهاز حماية المستهلك",
+   "gold": [
+    1120,
+    "complaint",
+    true
+   ],
+   "raw": "{\n  \"order_id\": 1120,\n  \"intent\": \"complaint\",\n  \"urgent\": true\n}",
+   "json": true,
+   "schema": true,
+   "correct": true,
+   "why": ""
+  },
+  {
+   "message": "شكرا الطلب وصل بسرعة 👌",
+   "gold": [
+    null,
+    "other",
+    false
+   ],
+   "raw": "{\n\"order_id\": null,\n\"intent\": \"other\",\n\"urgent\": false\n}",
+   "json": true,
+   "schema": true,
+   "correct": true,
+   "why": ""
+  }
+ ],
+ "schema": [
+  {
+   "message": "الأوردر 1042 لسه موصلش، هو فين؟",
+   "gold": [
+    1042,
+    "status",
+    false
+   ],
+   "raw": "{\"order_id\": 1042, \"intent\": \"status\", \"urgent\": true}",
+   "json": true,
+   "schema": true,
+   "correct": false,
+   "why": "got {'order_id': 1042, 'intent': 'status', 'urgent': True}"
+  },
+  {
+   "message": "عايز أرجّع الجزمة اللي في أوردر 1051، المقاس طلع صغير",
+   "gold": [
+    1051,
+    "refund",
+    false
+   ],
+   "raw": "{\"order_id\": 1051, \"intent\": \"refund\", \"urgent\": false}",
+   "json": true,
+   "schema": true,
+   "correct": true,
+   "why": ""
+  },
+  {
+   "message": "الغوا الأوردر 1060 بسرعة لو سمحتم قبل ما يتشحن!!",
+   "gold": [
+    1060,
+    "cancel",
+    true
+   ],
+   "raw": "{\"order_id\": 1060, \"intent\": \"cancel\", \"urgent\": true}",
+   "json": true,
+   "schema": true,
+   "correct": true,
+   "why": ""
+  },
+  {
+   "message": "المندوب كان قليل الذوق جدا ورمى الكرتونة على الأرض",
+   "gold": [
+    null,
+    "complaint",
+    false
+   ],
+   "raw": "{\"order_id\": null, \"intent\": \"complaint\", \"urgent\": true}",
+   "json": true,
+   "schema": true,
+   "correct": false,
+   "why": "got {'order_id': None, 'intent': 'complaint', 'urgent': True}"
+  },
+  {
+   "message": "انا مسافر بكرة الصبح والأوردر 1043 لازم يوصل النهارده ضروري",
+   "gold": [
+    1043,
+    "status",
+    true
+   ],
+   "raw": "{\"order_id\": 1043, \"intent\": \"other\", \"urgent\": true}",
+   "json": true,
+   "schema": true,
+   "correct": false,
+   "why": "got {'order_id': 1043, 'intent': 'other', 'urgent': True}"
+  },
+  {
+   "message": "فلوس المرتجع بتاع 1045 لسه مرجعتش ليه؟ بقالها أسبوعين",
+   "gold": [
+    1045,
+    "refund",
+    false
+   ],
+   "raw": "{\"order_id\": 1045, \"intent\": \"complaint\", \"urgent\": true}",
+   "json": true,
+   "schema": true,
+   "correct": false,
+   "why": "got {'order_id': 1045, 'intent': 'complaint', 'urgent': True}"
+  },
+  {
+   "message": "عندكم شاحن 65 وات؟",
+   "gold": [
+    null,
+    "other",
+    false
+   ],
+   "raw": "{\"order_id\": null, \"intent\": \"other\", \"urgent\": false}",
+   "json": true,
+   "schema": true,
+   "correct": true,
+   "why": ""
+  },
+  {
+   "message": "الشاشة اللي جت في 1072 مكسورة، عايز فلوسي",
+   "gold": [
+    1072,
+    "refund",
+    true
+   ],
+   "raw": "{\"order_id\": 1072, \"intent\": \"complaint\", \"urgent\": true}",
+   "json": true,
+   "schema": true,
+   "correct": false,
+   "why": "got {'order_id': 1072, 'intent': 'complaint', 'urgent': True}"
+  },
+  {
+   "message": "ممكن أغيّر العنوان بتاع أوردر 1080؟",
+   "gold": [
+    1080,
+    "other",
+    false
+   ],
+   "raw": "{\"order_id\": 1080, \"intent\": \"cancel\", \"urgent\": true}",
+   "json": true,
+   "schema": true,
+   "correct": false,
+   "why": "got {'order_id': 1080, 'intent': 'cancel', 'urgent': True}"
+  },
+  {
+   "message": "انا طلبت بالغلط، كنسل الطلب رقم ١٠٨٥",
+   "gold": [
+    1085,
+    "cancel",
+    false
+   ],
+   "raw": "{\"order_id\": 1085, \"intent\": \"cancel\", \"urgent\": true}",
+   "json": true,
+   "schema": true,
+   "correct": false,
+   "why": "got {'order_id': 1085, 'intent': 'cancel', 'urgent': True}"
+  },
+  {
+   "message": "بقالي ساعة على خدمة العملاء محدش بيرد، ده مش احترام",
+   "gold": [
+    null,
+    "complaint",
+    false
+   ],
+   "raw": "{\"order_id\": null, \"intent\": \"complaint\", \"urgent\": true}",
+   "json": true,
+   "schema": true,
+   "correct": false,
+   "why": "got {'order_id': None, 'intent': 'complaint', 'urgent': True}"
+  },
+  {
+   "message": "أوردر 1090 اتشحن ولا لسه؟",
+   "gold": [
+    1090,
+    "status",
+    false
+   ],
+   "raw": "{\"order_id\": 1090, \"intent\": \"status\", \"urgent\": true}",
+   "json": true,
+   "schema": true,
+   "correct": false,
+   "why": "got {'order_id': 1090, 'intent': 'status', 'urgent': True}"
+  },
+  {
+   "message": "الفاتورة بتاعة 1094 فيها ضريبة غلط",
+   "gold": [
+    1094,
+    "complaint",
+    false
+   ],
+   "raw": "{\"order_id\": 1094, \"intent\": \"complaint\", \"urgent\": false}",
+   "json": true,
+   "schema": true,
+   "correct": true,
+   "why": ""
+  },
+  {
+   "message": "عايز استرجع فلوس السماعة، رقم الطلب 1101",
+   "gold": [
+    1101,
+    "refund",
+    false
+   ],
+   "raw": "{\"order_id\": 1101, \"intent\": \"refund\", \"urgent\": true}",
+   "json": true,
+   "schema": true,
+   "correct": false,
+   "why": "got {'order_id': 1101, 'intent': 'refund', 'urgent': True}"
+  },
+  {
+   "message": "حد يرد عليا الأوردر 1103 اتأخر ٣ أيام وانا محتاجه للشغل حالاً",
+   "gold": [
+    1103,
+    "status",
+    true
+   ],
+   "raw": "{\"order_id\": 1103, \"intent\": \"status\", \"urgent\": true}",
+   "json": true,
+   "schema": true,
+   "correct": true,
+   "why": ""
+  },
+  {
+   "message": "بتوصلوا أسوان؟",
+   "gold": [
+    null,
+    "other",
+    false
+   ],
+   "raw": "{\"order_id\": null, \"intent\": \"other\", \"urgent\": false}",
+   "json": true,
+   "schema": true,
+   "correct": true,
+   "why": ""
+  },
+  {
+   "message": "الغي طلبي 1110 لاقيته أرخص في حتة تانية",
+   "gold": [
+    1110,
+    "cancel",
+    false
+   ],
+   "raw": "{\"order_id\": 1110, \"intent\": \"cancel\", \"urgent\": true}",
+   "json": true,
+   "schema": true,
+   "correct": false,
+   "why": "got {'order_id': 1110, 'intent': 'cancel', 'urgent': True}"
+  },
+  {
+   "message": "جالي لون غلط في أوردر 1115، عايز أبدّله",
+   "gold": [
+    1115,
+    "refund",
+    false
+   ],
+   "raw": "{\"order_id\": 1115, \"intent\": \"complaint\", \"urgent\": false}",
+   "json": true,
+   "schema": true,
+   "correct": false,
+   "why": "got {'order_id': 1115, 'intent': 'complaint', 'urgent': False}"
+  },
+  {
+   "message": "ده تالت مرة الطلب يتأجل!!! أوردر 1120، هعمل شكوى في جهاز حماية المستهلك",
+   "gold": [
+    1120,
+    "complaint",
+    true
+   ],
+   "raw": "{\"order_id\": 1120, \"intent\": \"complaint\", \"urgent\": true}",
+   "json": true,
+   "schema": true,
+   "correct": true,
+   "why": ""
+  },
+  {
+   "message": "شكرا الطلب وصل بسرعة 👌",
+   "gold": [
+    null,
+    "other",
+    false
+   ],
+   "raw": "{\"order_id\": null, \"intent\": \"other\", \"urgent\": false}",
+   "json": true,
+   "schema": true,
+   "correct": true,
+   "why": ""
+  }
+ ],
+ "schema+rules": [
+  {
+   "message": "الأوردر 1042 لسه موصلش، هو فين؟",
+   "gold": [
+    1042,
+    "status",
+    false
+   ],
+   "raw": "{\"order_id\": 1042, \"intent\": \"status\", \"urgent\": false}",
+   "json": true,
+   "schema": true,
+   "correct": true,
+   "why": ""
+  },
+  {
+   "message": "عايز أرجّع الجزمة اللي في أوردر 1051، المقاس طلع صغير",
+   "gold": [
+    1051,
+    "refund",
+    false
+   ],
+   "raw": "{\"order_id\": 1051, \"intent\": \"refund\", \"urgent\": false}",
+   "json": true,
+   "schema": true,
+   "correct": true,
+   "why": ""
+  },
+  {
+   "message": "الغوا الأوردر 1060 بسرعة لو سمحتم قبل ما يتشحن!!",
+   "gold": [
+    1060,
+    "cancel",
+    true
+   ],
+   "raw": "{\"order_id\": 1060, \"intent\": \"cancel\", \"urgent\": true}",
+   "json": true,
+   "schema": true,
+   "correct": true,
+   "why": ""
+  },
+  {
+   "message": "المندوب كان قليل الذوق جدا ورمى الكرتونة على الأرض",
+   "gold": [
+    null,
+    "complaint",
+    false
+   ],
+   "raw": "{\"order_id\": null, \"intent\": \"complaint\", \"urgent\": false}",
+   "json": true,
+   "schema": true,
+   "correct": true,
+   "why": ""
+  },
+  {
+   "message": "انا مسافر بكرة الصبح والأوردر 1043 لازم يوصل النهارده ضروري",
+   "gold": [
+    1043,
+    "status",
+    true
+   ],
+   "raw": "{\"order_id\": 1043, \"intent\": \"status\", \"urgent\": true}",
+   "json": true,
+   "schema": true,
+   "correct": true,
+   "why": ""
+  },
+  {
+   "message": "فلوس المرتجع بتاع 1045 لسه مرجعتش ليه؟ بقالها أسبوعين",
+   "gold": [
+    1045,
+    "refund",
+    false
+   ],
+   "raw": "{\"order_id\": 1045, \"intent\": \"status\", \"urgent\": false}",
+   "json": true,
+   "schema": true,
+   "correct": false,
+   "why": "got {'order_id': 1045, 'intent': 'status', 'urgent': False}"
+  },
+  {
+   "message": "عندكم شاحن 65 وات؟",
+   "gold": [
+    null,
+    "other",
+    false
+   ],
+   "raw": "{\"order_id\": null, \"intent\": \"other\", \"urgent\": false}",
+   "json": true,
+   "schema": true,
+   "correct": true,
+   "why": ""
+  },
+  {
+   "message": "الشاشة اللي جت في 1072 مكسورة، عايز فلوسي",
+   "gold": [
+    1072,
+    "refund",
+    true
+   ],
+   "raw": "{\"order_id\": 1072, \"intent\": \"refund\", \"urgent\": false}",
+   "json": true,
+   "schema": true,
+   "correct": false,
+   "why": "got {'order_id': 1072, 'intent': 'refund', 'urgent': False}"
+  },
+  {
+   "message": "ممكن أغيّر العنوان بتاع أوردر 1080؟",
+   "gold": [
+    1080,
+    "other",
+    false
+   ],
+   "raw": "{\"order_id\": 1080, \"intent\": \"other\", \"urgent\": false}",
+   "json": true,
+   "schema": true,
+   "correct": true,
+   "why": ""
+  },
+  {
+   "message": "انا طلبت بالغلط، كنسل الطلب رقم ١٠٨٥",
+   "gold": [
+    1085,
+    "cancel",
+    false
+   ],
+   "raw": "{\"order_id\": 1085, \"intent\": \"cancel\", \"urgent\": false}",
+   "json": true,
+   "schema": true,
+   "correct": true,
+   "why": ""
+  },
+  {
+   "message": "بقالي ساعة على خدمة العملاء محدش بيرد، ده مش احترام",
+   "gold": [
+    null,
+    "complaint",
+    false
+   ],
+   "raw": "{\"order_id\": null, \"intent\": \"other\", \"urgent\": true}",
+   "json": true,
+   "schema": true,
+   "correct": false,
+   "why": "got {'order_id': None, 'intent': 'other', 'urgent': True}"
+  },
+  {
+   "message": "أوردر 1090 اتشحن ولا لسه؟",
+   "gold": [
+    1090,
+    "status",
+    false
+   ],
+   "raw": "{\"order_id\": 1090, \"intent\": \"status\", \"urgent\": false}",
+   "json": true,
+   "schema": true,
+   "correct": true,
+   "why": ""
+  },
+  {
+   "message": "الفاتورة بتاعة 1094 فيها ضريبة غلط",
+   "gold": [
+    1094,
+    "complaint",
+    false
+   ],
+   "raw": "{\"order_id\": 1094, \"intent\": \"complaint\", \"urgent\": false}",
+   "json": true,
+   "schema": true,
+   "correct": true,
+   "why": ""
+  },
+  {
+   "message": "عايز استرجع فلوس السماعة، رقم الطلب 1101",
+   "gold": [
+    1101,
+    "refund",
+    false
+   ],
+   "raw": "{\"order_id\": 1101, \"intent\": \"refund\", \"urgent\": false}",
+   "json": true,
+   "schema": true,
+   "correct": true,
+   "why": ""
+  },
+  {
+   "message": "حد يرد عليا الأوردر 1103 اتأخر ٣ أيام وانا محتاجه للشغل حالاً",
+   "gold": [
+    1103,
+    "status",
+    true
+   ],
+   "raw": "{\"order_id\": 1103, \"intent\": \"status\", \"urgent\": true}",
+   "json": true,
+   "schema": true,
+   "correct": true,
+   "why": ""
+  },
+  {
+   "message": "بتوصلوا أسوان؟",
+   "gold": [
+    null,
+    "other",
+    false
+   ],
+   "raw": "{\"order_id\": null, \"intent\": \"status\", \"urgent\": false}",
+   "json": true,
+   "schema": true,
+   "correct": false,
+   "why": "got {'order_id': None, 'intent': 'status', 'urgent': False}"
+  },
+  {
+   "message": "الغي طلبي 1110 لاقيته أرخص في حتة تانية",
+   "gold": [
+    1110,
+    "cancel",
+    false
+   ],
+   "raw": "{\"order_id\": 1110, \"intent\": \"cancel\", \"urgent\": false}",
+   "json": true,
+   "schema": true,
+   "correct": true,
+   "why": ""
+  },
+  {
+   "message": "جالي لون غلط في أوردر 1115، عايز أبدّله",
+   "gold": [
+    1115,
+    "refund",
+    false
+   ],
+   "raw": "{\"order_id\": 1115, \"intent\": \"other\", \"urgent\": false}",
+   "json": true,
+   "schema": true,
+   "correct": false,
+   "why": "got {'order_id': 1115, 'intent': 'other', 'urgent': False}"
+  },
+  {
+   "message": "ده تالت مرة الطلب يتأجل!!! أوردر 1120، هعمل شكوى في جهاز حماية المستهلك",
+   "gold": [
+    1120,
+    "complaint",
+    true
+   ],
+   "raw": "{\"order_id\": 1120, \"intent\": \"complaint\", \"urgent\": true}",
+   "json": true,
+   "schema": true,
+   "correct": true,
+   "why": ""
+  },
+  {
+   "message": "شكرا الطلب وصل بسرعة 👌",
+   "gold": [
+    null,
+    "other",
+    false
+   ],
+   "raw": "{\"order_id\": null, \"intent\": \"other\", \"urgent\": false}",
+   "json": true,
+   "schema": true,
+   "correct": true,
+   "why": ""
+  }
+ ]
+}
