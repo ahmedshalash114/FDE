@@ -2,6 +2,7 @@
 
 كود سلسلة **FDE Academy** — إزاي تبقى Forward Deployed Engineer، درس درس وبالمصري.
 العناوين ماشية على كورس Anthropic Academy: *Building with the Claude API*.
+الموسم الأول: L01–L10 · الموسم التاني: L11–L20.
 
 | # | الدرس | الكود |
 |---|-------|-------|
@@ -15,5 +16,6 @@
 | 08 | Extended Thinking: thinking blocks مع الـ tools (0 → 5 من 6 tool calls) والتكلفة | [`L08-thinking`](L08-thinking) |
 | 09 | MCP: server (tools + resource) و client، ونفس الـ eval عبر MCP | [`L09-mcp`](L09-mcp) |
 | 10 | Agents & Workflows: routing, chaining, checks + retry (agent 3/6 · workflow+checks 5/6) | [`L10-agents`](L10-agents) |
+| 11 | Prompt Caching: الثابت فوق والمتغير تحت (31.8s → 16.3s) | [`L11-caching`](L11-caching) |
 
 تابع السلسلة: [@ahmedm.shalash](https://www.instagram.com/ahmedm.shalash/)
