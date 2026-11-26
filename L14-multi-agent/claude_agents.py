@@ -8,7 +8,7 @@ from agents import WORKERS, ORCH, WRITER, PLAN_SCHEMA
 from store import MESSAGES
 
 client = AsyncAnthropic()
-SMALL, BIG = "claude-haiku-4-5", "claude-sonnet-4-5"     # cheap model for workers, stronger one to plan
+SMALL, BIG = "claude-haiku-5-5", "claude-sonnet-5-5"     # cheap model for workers, stronger one to plan
 
 async def ask(model, system, user, schema=None):
     kw = {"output_config": {"format": {"type": "json_schema", "schema": schema}}} if schema else {}
