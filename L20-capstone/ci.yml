@@ -1,0 +1,19 @@
+# Example GitHub Actions workflow (copy to .github/workflows/mona.yml). Not run in the video.
+name: mona-support
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install -r requirements.txt && pytest -q            # fast tests, fake model, every push
+  evals:
+    runs-on: ubuntu-latest        # needs a model: point LLM=claude + ANTHROPIC_API_KEY, or a runner with Ollama
+    needs: test
+    steps:
+      - uses: actions/checkout@v4
+      - run: docker build -t mona-support .
+      - run: docker run -d --network host -e LLM=claude -e ANTHROPIC_API_KEY=${{ secrets.ANTHROPIC_API_KEY }} mona-support
+      - run: pip install httpx && sleep 5 && python evals/run.py --url http://localhost:8000 --min 0.85   # exit 1 = merge blocked

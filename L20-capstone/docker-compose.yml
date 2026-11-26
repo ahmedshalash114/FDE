@@ -1,0 +1,17 @@
+services:
+  ollama:
+    image: ollama/ollama
+    volumes: ["ollama:/root/.ollama"]
+    ports: ["11434:11434"]
+  mona:
+    build: .
+    environment:
+      OLLAMA_URL: http://ollama:11434
+      MODEL: qwen3.5:4b
+    ports: ["8000:8000"]
+    volumes: ["./traces:/srv/traces"]
+    depends_on: [ollama]
+volumes:
+  ollama: {}
+# first run:  docker compose up -d && docker compose exec ollama ollama pull qwen3.5:4b
+# then:       python evals/run.py --url http://localhost:8000
