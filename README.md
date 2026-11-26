@@ -17,5 +17,6 @@
 | 09 | MCP: server (tools + resource) و client، ونفس الـ eval عبر MCP | [`L09-mcp`](L09-mcp) |
 | 10 | Agents & Workflows: routing, chaining, checks + retry (agent 3/6 · workflow+checks 5/6) | [`L10-agents`](L10-agents) |
 | 11 | Prompt Caching: الثابت فوق والمتغير تحت (31.8s → 16.3s) | [`L11-caching`](L11-caching) |
+| 12 | Structured Outputs: الـ schema بيضمن الشكل والقواعد بتضمن المعنى (8 → 15 من 20) | [`L12-structured`](L12-structured) |
 
 تابع السلسلة: [@ahmedm.shalash](https://www.instagram.com/ahmedm.shalash/)
