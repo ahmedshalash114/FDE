@@ -1,0 +1,890 @@
+{
+ "knowledge": [
+  {
+   "mode": "prompt",
+   "q": "لو الجزمة طلعت صغيرة، أقدر أرجّعها لحد إمتى؟",
+   "result": "wrong",
+   "chunks": null,
+   "text": "نعم، يمكنك إرجاع الجزية خلال 7 أيام من استلامها بشرط عدم استخدام المنتج ووجوده في حالته الأصلية.",
+   "prompt_tokens": 59,
+   "out_tokens": 32,
+   "ms": 1201
+  },
+  {
+   "mode": "prompt",
+   "q": "فلوس المرتجع بتاخد قد إيه عشان ترجع؟",
+   "result": "dont_know",
+   "chunks": null,
+   "text": "إرجاع الفلوس متاح في معظم الحالات ولكن المبلغ يعتمد على سبب الإرجاع وسياسة المخزن، غالبًا ما يتم إرجاعها بالكامل أو كخصم حسب الحالة. للتفاصيل الدقيقة يفضل تواصل مع خدمة العملاء مباشرة لشرح حالة طلبك المحدد.",
+   "prompt_tokens": 56,
+   "out_tokens": 58,
+   "ms": 1968
+  },
+  {
+   "mode": "prompt",
+   "q": "الشحن جوه القاهرة بكام؟",
+   "result": "wrong",
+   "chunks": null,
+   "text": "الشحن للخرطوم يساوي 10 جنيهات فقط، ولا بأس به.",
+   "prompt_tokens": 49,
+   "out_tokens": 20,
+   "ms": 835
+  },
+  {
+   "mode": "prompt",
+   "q": "بتوصلوا أسوان في قد إيه؟",
+   "result": "dont_know",
+   "chunks": null,
+   "text": "بصراحة، لم أقم بإحصاء دقيق على موعد وصولنا لأسوان بعد. أنصحك بالتحقق من التطبيق الرسمي أو التواصل معنا عبر الواتساب للتأكد من الجدول المحدد.",
+   "prompt_tokens": 51,
+   "out_tokens": 44,
+   "ms": 1556
+  },
+  {
+   "mode": "prompt",
+   "q": "الدفع عند الاستلام متاح لحد كام؟",
+   "result": "wrong",
+   "chunks": null,
+   "text": "نعم، خدمة الدفع عند الاستلام متاحة لجميع المنتجات في المتجر.",
+   "prompt_tokens": 51,
+   "out_tokens": 17,
+   "ms": 741
+  },
+  {
+   "mode": "prompt",
+   "q": "التقسيط بيبدأ من أوردر بكام؟",
+   "result": "wrong",
+   "chunks": null,
+   "text": "البدء في التقسيط يعتمد على قيمة الفاتورة والموافقة الخاصة بك، لكن عادةً يبدأ الحسابات من 2,000 جنيه مصري فما فوق. هل ترغبون بتفاصيل أكثر عن القروض المتاحة؟",
+   "prompt_tokens": 52,
+   "out_tokens": 48,
+   "ms": 1707
+  },
+  {
+   "mode": "prompt",
+   "q": "التقسيط على كام شهر؟",
+   "result": "correct",
+   "chunks": null,
+   "text": "نعم، نحن نقسم قيمة المشتريات إلى 6 أشهر دون فوائد. هل تريد مساعدة في حساب المبلغ الإجمالي؟",
+   "prompt_tokens": 48,
+   "out_tokens": 27,
+   "ms": 1075
+  },
+  {
+   "mode": "prompt",
+   "q": "السماعة ضمانها قد إيه؟",
+   "result": "wrong",
+   "chunks": null,
+   "text": "السماعات فيها ضمان لمدة عام من تاريخ الشراء في جميع المتاجر الرسمية وموقعنا.",
+   "prompt_tokens": 50,
+   "out_tokens": 21,
+   "ms": 850
+  },
+  {
+   "mode": "prompt",
+   "q": "الشحن بيبقى ببلاش من أول كام؟",
+   "result": "wrong",
+   "chunks": null,
+   "text": "السياسة الحالية للشحن في مونا ستور هي مجاني بالكامل لجميع المنتجات، ولا يوجد حد أدنى للتسوق.",
+   "prompt_tokens": 53,
+   "out_tokens": 27,
+   "ms": 1036
+  },
+  {
+   "mode": "prompt",
+   "q": "خدمة العملاء بتقفل الساعة كام؟",
+   "result": "wrong",
+   "chunks": null,
+   "text": "خدمة عملاء مونـا ستور مصر مغلقة حالياً، وغادي نفتحها في وقت ما قريب جدًا! 🕒🛍️",
+   "prompt_tokens": 49,
+   "out_tokens": 34,
+   "ms": 1231
+  },
+  {
+   "mode": "prompt",
+   "q": "المنتج جالي مكسور، لازم أبلغ في خلال قد إيه؟",
+   "result": "wrong",
+   "chunks": null,
+   "text": "بالتوفيق يا صديقي، ويجب عليك التبليغ فوراً خلال 24 ساعة لإعادتك للمحلن أو لخدمة العملاء.",
+   "prompt_tokens": 59,
+   "out_tokens": 33,
+   "ms": 1210
+  },
+  {
+   "mode": "prompt",
+   "q": "الفاتورة الضريبية بتوصل إمتى؟",
+   "result": "wrong",
+   "chunks": null,
+   "text": "الفاصلة الإلكترونية تروح مع طلبك مباشرة بعد تأكيد الشحن، أما الفاتورة الورقية فتتصل حسب طريقة الدفع والخطوات التي اخترتها.",
+   "prompt_tokens": 53,
+   "out_tokens": 36,
+   "ms": 1325
+  },
+  {
+   "mode": "stuff",
+   "q": "لو الجزمة طلعت صغيرة، أقدر أرجّعها لحد إمتى؟",
+   "result": "correct",
+   "chunks": null,
+   "text": "قادر ترجع المنتج مجانًا مرة واحدة خلال 14 يوم من الاستلام إذا كانت مقاسها مختلف، وبترجع على نفس وسيلة الدفع خلال 7 أيام بعد وصوله للمخزن.",
+   "prompt_tokens": 430,
+   "out_tokens": 44,
+   "ms": 2475
+  },
+  {
+   "mode": "stuff",
+   "q": "فلوس المرتجع بتاخد قد إيه عشان ترجع؟",
+   "result": "wrong",
+   "chunks": null,
+   "text": "العمود بترجع فلوسه على نفس وسيلة الدفع الأصلية، وفي حال كان هناك رسوم شحن فقد يتم احتفاظ بها.",
+   "prompt_tokens": 427,
+   "out_tokens": 29,
+   "ms": 1973
+  },
+  {
+   "mode": "stuff",
+   "q": "الشحن جوه القاهرة بكام؟",
+   "result": "correct",
+   "chunks": null,
+   "text": "الشفرة لـ 45 جنيه، ومشجع لو الأوردر فوق 1500 جنيه.\nوتوصل في يوم أو يومين.",
+   "prompt_tokens": 420,
+   "out_tokens": 34,
+   "ms": 2066
+  },
+  {
+   "mode": "stuff",
+   "q": "بتوصلوا أسوان في قد إيه؟",
+   "result": "correct",
+   "chunks": null,
+   "text": "أوه، بتوصل أسوان في الفترة ما بين 5 لـ 7 أيام.",
+   "prompt_tokens": 422,
+   "out_tokens": 20,
+   "ms": 1693
+  },
+  {
+   "mode": "stuff",
+   "q": "الدفع عند الاستلام متاح لحد كام؟",
+   "result": "correct",
+   "chunks": null,
+   "text": "الدفع عند الاستلام متاح للأوردرات بقيمة لا تتجاوز 5000 جنيه فقط.",
+   "prompt_tokens": 422,
+   "out_tokens": 22,
+   "ms": 1820
+  },
+  {
+   "mode": "stuff",
+   "q": "التقسيط بيبدأ من أوردر بكام؟",
+   "result": "correct",
+   "chunks": null,
+   "text": "التقسيط متاح لأي أوردر قيمته فوق 3000 جنيه فقط.",
+   "prompt_tokens": 423,
+   "out_tokens": 19,
+   "ms": 1679
+  },
+  {
+   "mode": "stuff",
+   "q": "التقسيط على كام شهر؟",
+   "result": "correct",
+   "chunks": null,
+   "text": "التقسيط يكون لمدة 6 شهور على الأوردرات فوق 3000 جنيه فقط، وما هو إلا مع بطاقات البنوك المشاركة.",
+   "prompt_tokens": 419,
+   "out_tokens": 32,
+   "ms": 2044
+  },
+  {
+   "mode": "stuff",
+   "q": "السماعة ضمانها قد إيه؟",
+   "result": "correct",
+   "chunks": null,
+   "text": "ضمان السماعات شهرين (6 شهور) حسب سياسة المتجر.",
+   "prompt_tokens": 421,
+   "out_tokens": 17,
+   "ms": 1618
+  },
+  {
+   "mode": "stuff",
+   "q": "الشحن بيبقى ببلاش من أول كام؟",
+   "result": "correct",
+   "chunks": null,
+   "text": "أصبح الشحن مجانيًا للأوردر فوق 1500 جنيه داخل القاهرة والجيزة فقط، بينما يحط في محافظه 75 جنيه.",
+   "prompt_tokens": 424,
+   "out_tokens": 33,
+   "ms": 2105
+  },
+  {
+   "mode": "stuff",
+   "q": "خدمة العملاء بتقفل الساعة كام؟",
+   "result": "correct",
+   "chunks": null,
+   "text": "مواعيد خدمة العملاء هي من 9 صباح حتى 11 ليلاً كل يوم ما عدا الجمعة بعد الظهر.",
+   "prompt_tokens": 420,
+   "out_tokens": 26,
+   "ms": 1813
+  },
+  {
+   "mode": "stuff",
+   "q": "المنتج جالي مكسور، لازم أبلغ في خلال قد إيه؟",
+   "result": "correct",
+   "chunks": null,
+   "text": "عليك تصوير المنتج وإرساله عبر الشات خلال 48 ساعة من استلام المنتج.",
+   "prompt_tokens": 430,
+   "out_tokens": 21,
+   "ms": 1747
+  },
+  {
+   "mode": "stuff",
+   "q": "الفاتورة الضريبية بتوصل إمتى؟",
+   "result": "correct",
+   "chunks": null,
+   "text": "تتصل الفاتورة الضريبية عبر البريد الإلكتروني خلال 24 ساعة من تسليم المنتج.",
+   "prompt_tokens": 424,
+   "out_tokens": 22,
+   "ms": 1755
+  },
+  {
+   "mode": "rag",
+   "q": "لو الجزمة طلعت صغيرة، أقدر أرجّعها لحد إمتى؟",
+   "result": "wrong",
+   "chunks": [
+    9,
+    5,
+    2
+   ],
+   "text": "أنا مو متأكدة، لكني مافوتيني غير في سياسات الخدمة والتسليم.",
+   "prompt_tokens": 179,
+   "out_tokens": 23,
+   "ms": 1214
+  },
+  {
+   "mode": "rag",
+   "q": "فلوس المرتجع بتاخد قد إيه عشان ترجع؟",
+   "result": "correct",
+   "chunks": [
+    1,
+    0,
+    3
+   ],
+   "text": "نعم، يتم استرجاع فلوس المرتجع عبر نفس وسيلة الدفع التي استخدمتها للتسوق خلال 7 أيام عمل بعد وصول المنتج للمخزن.",
+   "prompt_tokens": 185,
+   "out_tokens": 34,
+   "ms": 1544
+  },
+  {
+   "mode": "rag",
+   "q": "الشحن جوه القاهرة بكام؟",
+   "result": "correct",
+   "chunks": [
+    2,
+    4,
+    10
+   ],
+   "text": "يصل الشحن داخل القاهرة والجيزة في يوم أو يومين ومصاريفه 45 جنيه، إلا إذا كان الطلب فوق 1500 جنيه يكون مجانيًا.",
+   "prompt_tokens": 176,
+   "out_tokens": 37,
+   "ms": 1617
+  },
+  {
+   "mode": "rag",
+   "q": "بتوصلوا أسوان في قد إيه؟",
+   "result": "correct",
+   "chunks": [
+    3,
+    11,
+    1
+   ],
+   "text": "نوصلكم بأسوان من 5 إلى 7 أيام حسب سياسة الشحن للمحافظات النائية.",
+   "prompt_tokens": 172,
+   "out_tokens": 24,
+   "ms": 1244
+  },
+  {
+   "mode": "rag",
+   "q": "الدفع عند الاستلام متاح لحد كام؟",
+   "result": "correct",
+   "chunks": [
+    5,
+    1,
+    0
+   ],
+   "text": "الدفع عند الاستلام متاح للأوردرات بحد 5000 جنيه مصري.",
+   "prompt_tokens": 157,
+   "out_tokens": 20,
+   "ms": 1053
+  },
+  {
+   "mode": "rag",
+   "q": "التقسيط بيبدأ من أوردر بكام؟",
+   "result": "correct",
+   "chunks": [
+    6,
+    4,
+    9
+   ],
+   "text": "نظّار للبطاقة بنفع على 6 شهور لأي أوامر فوق 3000 جنيه. هل أنت مؤدّب ما تريد معرفة المزيد؟",
+   "prompt_tokens": 173,
+   "out_tokens": 36,
+   "ms": 1600
+  },
+  {
+   "mode": "rag",
+   "q": "التقسيط على كام شهر؟",
+   "result": "correct",
+   "chunks": [
+    6,
+    11,
+    1
+   ],
+   "text": "التقسيط على 6 شهور فقط للأوردر فوق 3000 جنيه وبكروت البنوك المشاركة.",
+   "prompt_tokens": 156,
+   "out_tokens": 26,
+   "ms": 1264
+  },
+  {
+   "mode": "rag",
+   "q": "السماعة ضمانها قد إيه؟",
+   "result": "correct",
+   "chunks": [
+    7,
+    11,
+    10
+   ],
+   "text": "ضمان السماعات لمدة 6 أشهر حسب سياسة الشركة.",
+   "prompt_tokens": 155,
+   "out_tokens": 13,
+   "ms": 842
+  },
+  {
+   "mode": "rag",
+   "q": "الشحن بيبقى ببلاش من أول كام؟",
+   "result": "correct",
+   "chunks": [
+    4,
+    2,
+    3
+   ],
+   "text": "يكون الشحن مجاني للأوردر التي قيمتها فوق 1500 جنيه إذا كانت داخل القاهرة والجيزة. أما المحافظات فهي مشغلة دائمًا بمصاريفها المحددة ولا يوجد حد أدنى للاحترام المجاني.",
+   "prompt_tokens": 194,
+   "out_tokens": 52,
+   "ms": 2095
+  },
+  {
+   "mode": "rag",
+   "q": "خدمة العملاء بتقفل الساعة كام؟",
+   "result": "correct",
+   "chunks": [
+    9,
+    11,
+    10
+   ],
+   "text": "مواعيد خدمة العملاء من 9 الصبح لحد 11 بالليل ما عدا الجمعة من 2 ظهر، ولا بتقفل الساعة محددة بعد.",
+   "prompt_tokens": 162,
+   "out_tokens": 35,
+   "ms": 1533
+  },
+  {
+   "mode": "rag",
+   "q": "المنتج جالي مكسور، لازم أبلغ في خلال قد إيه؟",
+   "result": "correct",
+   "chunks": [
+    10,
+    1,
+    0
+   ],
+   "text": "تقدر تلحق الصورة في الشات خلال 48 ساعة من وقت الاستلام، وتقدر ترجعي المنتج نفسه خلال 14 يوم بشرط أن يكون كاملًا.",
+   "prompt_tokens": 174,
+   "out_tokens": 37,
+   "ms": 1614
+  },
+  {
+   "mode": "rag",
+   "q": "الفاتورة الضريبية بتوصل إمتى؟",
+   "result": "correct",
+   "chunks": [
+    11,
+    10,
+    1
+   ],
+   "text": "بتوصلك على الإيميل خلال 24 ساعة من التسليم.",
+   "prompt_tokens": 160,
+   "out_tokens": 17,
+   "ms": 950
+  }
+ ],
+ "update": [
+  {
+   "mode": "prompt",
+   "q": "الشحن جوه القاهرة بكام؟",
+   "result": "wrong",
+   "chunks": null,
+   "text": "الطلب جوه، الشحن لقطاير كالتالي: 25 جنيه للبساتين و40 جنيه للوسطى والجنوب.",
+   "prompt_tokens": 49,
+   "out_tokens": 33,
+   "ms": 1214
+  },
+  {
+   "mode": "stuff",
+   "q": "الشحن جوه القاهرة بكام؟",
+   "result": "correct",
+   "chunks": null,
+   "text": "الشحن في القاهرة والجيزة يوصِل في يوم أو يومين، ومصاريفه 60 جنيه إلا لو كان الأوردر فوق 1500 جنيه فيهكون مجاني.",
+   "prompt_tokens": 420,
+   "out_tokens": 41,
+   "ms": 2247
+  },
+  {
+   "mode": "rag",
+   "q": "الشحن جوه القاهرة بكام؟",
+   "result": "correct",
+   "chunks": [
+    2,
+    4,
+    10
+   ],
+   "text": "الشحن داخل القاهرة والجيزة يوصل في يوم أو يومين، ومصاريفه 60 جنيه إلا ما كان الأوردر فوق 1500 جنيه فتكون مجانيًا.",
+   "prompt_tokens": 176,
+   "out_tokens": 42,
+   "ms": 1790
+  }
+ ],
+ "behaviour": [
+  {
+   "few": false,
+   "msg": "الأوردر 1042 لسه موصلش، هو فين؟",
+   "gold": "status",
+   "ok": true,
+   "got": "status",
+   "text": "status",
+   "prompt_tokens": 75,
+   "out_tokens": 2,
+   "ms": 359
+  },
+  {
+   "few": false,
+   "msg": "عايز أرجّع الجزمة اللي في أوردر 1051، المقاس طلع صغير",
+   "gold": "refund",
+   "ok": true,
+   "got": "refund",
+   "text": "refund",
+   "prompt_tokens": 78,
+   "out_tokens": 2,
+   "ms": 336
+  },
+  {
+   "few": false,
+   "msg": "الغوا الأوردر 1060 بسرعة لو سمحتم قبل ما يتشحن!!",
+   "gold": "cancel",
+   "ok": true,
+   "got": "cancel",
+   "text": "cancel",
+   "prompt_tokens": 79,
+   "out_tokens": 2,
+   "ms": 339
+  },
+  {
+   "few": false,
+   "msg": "المندوب كان قليل الذوق جدا ورمى الكرتونة على الأرض",
+   "gold": "complaint",
+   "ok": true,
+   "got": "complaint",
+   "text": "complaint",
+   "prompt_tokens": 72,
+   "out_tokens": 3,
+   "ms": 366
+  },
+  {
+   "few": false,
+   "msg": "انا مسافر بكرة الصبح والأوردر 1043 لازم يوصل النهارده ضروري",
+   "gold": "status",
+   "ok": true,
+   "got": "status",
+   "text": "status",
+   "prompt_tokens": 79,
+   "out_tokens": 2,
+   "ms": 342
+  },
+  {
+   "few": false,
+   "msg": "فلوس المرتجع بتاع 1045 لسه مرجعتش ليه؟ بقالها أسبوعين",
+   "gold": "refund",
+   "ok": false,
+   "got": "status",
+   "text": "status",
+   "prompt_tokens": 83,
+   "out_tokens": 2,
+   "ms": 341
+  },
+  {
+   "few": false,
+   "msg": "عندكم شاحن 65 وات؟",
+   "gold": "other",
+   "ok": true,
+   "got": "other",
+   "text": "other",
+   "prompt_tokens": 67,
+   "out_tokens": 2,
+   "ms": 273
+  },
+  {
+   "few": false,
+   "msg": "الشاشة اللي جت في 1072 مكسورة، عايز فلوسي",
+   "gold": "refund",
+   "ok": true,
+   "got": "refund",
+   "text": "refund",
+   "prompt_tokens": 77,
+   "out_tokens": 2,
+   "ms": 337
+  },
+  {
+   "few": false,
+   "msg": "ممكن أغيّر العنوان بتاع أوردر 1080؟",
+   "gold": "other",
+   "ok": false,
+   "got": "cancel",
+   "text": "cancel",
+   "prompt_tokens": 73,
+   "out_tokens": 2,
+   "ms": 345
+  },
+  {
+   "few": false,
+   "msg": "انا طلبت بالغلط، كنسل الطلب رقم ١٠٨٥",
+   "gold": "cancel",
+   "ok": true,
+   "got": "cancel",
+   "text": "cancel",
+   "prompt_tokens": 77,
+   "out_tokens": 2,
+   "ms": 342
+  },
+  {
+   "few": false,
+   "msg": "بقالي ساعة على خدمة العملاء محدش بيرد، ده مش احترام",
+   "gold": "complaint",
+   "ok": true,
+   "got": "complaint",
+   "text": "complaint",
+   "prompt_tokens": 71,
+   "out_tokens": 3,
+   "ms": 366
+  },
+  {
+   "few": false,
+   "msg": "أوردر 1090 اتشحن ولا لسه؟",
+   "gold": "status",
+   "ok": true,
+   "got": "status",
+   "text": "status",
+   "prompt_tokens": 72,
+   "out_tokens": 2,
+   "ms": 335
+  },
+  {
+   "few": false,
+   "msg": "الفاتورة بتاعة 1094 فيها ضريبة غلط",
+   "gold": "complaint",
+   "ok": true,
+   "got": "complaint",
+   "text": "complaint",
+   "prompt_tokens": 72,
+   "out_tokens": 3,
+   "ms": 367
+  },
+  {
+   "few": false,
+   "msg": "عايز استرجع فلوس السماعة، رقم الطلب 1101",
+   "gold": "refund",
+   "ok": true,
+   "got": "refund",
+   "text": "refund",
+   "prompt_tokens": 74,
+   "out_tokens": 2,
+   "ms": 337
+  },
+  {
+   "few": false,
+   "msg": "حد يرد عليا الأوردر 1103 اتأخر ٣ أيام وانا محتاجه للشغل حالاً",
+   "gold": "status",
+   "ok": true,
+   "got": "status",
+   "text": "status",
+   "prompt_tokens": 86,
+   "out_tokens": 2,
+   "ms": 342
+  },
+  {
+   "few": false,
+   "msg": "بتوصلوا أسوان؟",
+   "gold": "other",
+   "ok": true,
+   "got": "other",
+   "text": "other",
+   "prompt_tokens": 63,
+   "out_tokens": 2,
+   "ms": 275
+  },
+  {
+   "few": false,
+   "msg": "الغي طلبي 1110 لاقيته أرخص في حتة تانية",
+   "gold": "cancel",
+   "ok": true,
+   "got": "cancel",
+   "text": "cancel",
+   "prompt_tokens": 76,
+   "out_tokens": 2,
+   "ms": 338
+  },
+  {
+   "few": false,
+   "msg": "جالي لون غلط في أوردر 1115، عايز أبدّله",
+   "gold": "refund",
+   "ok": true,
+   "got": "refund",
+   "text": "refund",
+   "prompt_tokens": 77,
+   "out_tokens": 3,
+   "ms": 376
+  },
+  {
+   "few": false,
+   "msg": "ده تالت مرة الطلب يتأجل!!! أوردر 1120، هعمل شكوى في جهاز حماية المستهلك",
+   "gold": "complaint",
+   "ok": true,
+   "got": "complaint",
+   "text": "complaint",
+   "prompt_tokens": 82,
+   "out_tokens": 3,
+   "ms": 371
+  },
+  {
+   "few": false,
+   "msg": "شكرا الطلب وصل بسرعة 👌",
+   "gold": "other",
+   "ok": false,
+   "got": "status",
+   "text": "status",
+   "prompt_tokens": 65,
+   "out_tokens": 2,
+   "ms": 265
+  },
+  {
+   "few": true,
+   "msg": "الأوردر 1042 لسه موصلش، هو فين؟",
+   "gold": "status",
+   "ok": true,
+   "got": "status",
+   "text": "status",
+   "prompt_tokens": 157,
+   "out_tokens": 2,
+   "ms": 489
+  },
+  {
+   "few": true,
+   "msg": "عايز أرجّع الجزمة اللي في أوردر 1051، المقاس طلع صغير",
+   "gold": "refund",
+   "ok": true,
+   "got": "refund",
+   "text": "refund",
+   "prompt_tokens": 160,
+   "out_tokens": 2,
+   "ms": 488
+  },
+  {
+   "few": true,
+   "msg": "الغوا الأوردر 1060 بسرعة لو سمحتم قبل ما يتشحن!!",
+   "gold": "cancel",
+   "ok": true,
+   "got": "cancel",
+   "text": "cancel",
+   "prompt_tokens": 161,
+   "out_tokens": 2,
+   "ms": 488
+  },
+  {
+   "few": true,
+   "msg": "المندوب كان قليل الذوق جدا ورمى الكرتونة على الأرض",
+   "gold": "complaint",
+   "ok": true,
+   "got": "complaint",
+   "text": "complaint",
+   "prompt_tokens": 154,
+   "out_tokens": 3,
+   "ms": 517
+  },
+  {
+   "few": true,
+   "msg": "انا مسافر بكرة الصبح والأوردر 1043 لازم يوصل النهارده ضروري",
+   "gold": "status",
+   "ok": true,
+   "got": "status",
+   "text": "status",
+   "prompt_tokens": 161,
+   "out_tokens": 2,
+   "ms": 491
+  },
+  {
+   "few": true,
+   "msg": "فلوس المرتجع بتاع 1045 لسه مرجعتش ليه؟ بقالها أسبوعين",
+   "gold": "refund",
+   "ok": false,
+   "got": "status",
+   "text": "status",
+   "prompt_tokens": 165,
+   "out_tokens": 2,
+   "ms": 553
+  },
+  {
+   "few": true,
+   "msg": "عندكم شاحن 65 وات؟",
+   "gold": "other",
+   "ok": true,
+   "got": "other",
+   "text": "other",
+   "prompt_tokens": 149,
+   "out_tokens": 2,
+   "ms": 486
+  },
+  {
+   "few": true,
+   "msg": "الشاشة اللي جت في 1072 مكسورة، عايز فلوسي",
+   "gold": "refund",
+   "ok": true,
+   "got": "refund",
+   "text": "refund",
+   "prompt_tokens": 159,
+   "out_tokens": 2,
+   "ms": 487
+  },
+  {
+   "few": true,
+   "msg": "ممكن أغيّر العنوان بتاع أوردر 1080؟",
+   "gold": "other",
+   "ok": true,
+   "got": "other",
+   "text": "other",
+   "prompt_tokens": 155,
+   "out_tokens": 2,
+   "ms": 491
+  },
+  {
+   "few": true,
+   "msg": "انا طلبت بالغلط، كنسل الطلب رقم ١٠٨٥",
+   "gold": "cancel",
+   "ok": true,
+   "got": "cancel",
+   "text": "cancel",
+   "prompt_tokens": 159,
+   "out_tokens": 2,
+   "ms": 485
+  },
+  {
+   "few": true,
+   "msg": "بقالي ساعة على خدمة العملاء محدش بيرد، ده مش احترام",
+   "gold": "complaint",
+   "ok": true,
+   "got": "complaint",
+   "text": "complaint",
+   "prompt_tokens": 153,
+   "out_tokens": 3,
+   "ms": 523
+  },
+  {
+   "few": true,
+   "msg": "أوردر 1090 اتشحن ولا لسه؟",
+   "gold": "status",
+   "ok": true,
+   "got": "status",
+   "text": "status",
+   "prompt_tokens": 154,
+   "out_tokens": 2,
+   "ms": 488
+  },
+  {
+   "few": true,
+   "msg": "الفاتورة بتاعة 1094 فيها ضريبة غلط",
+   "gold": "complaint",
+   "ok": false,
+   "got": "refund",
+   "text": "refund",
+   "prompt_tokens": 154,
+   "out_tokens": 2,
+   "ms": 485
+  },
+  {
+   "few": true,
+   "msg": "عايز استرجع فلوس السماعة، رقم الطلب 1101",
+   "gold": "refund",
+   "ok": true,
+   "got": "refund",
+   "text": "refund",
+   "prompt_tokens": 156,
+   "out_tokens": 2,
+   "ms": 491
+  },
+  {
+   "few": true,
+   "msg": "حد يرد عليا الأوردر 1103 اتأخر ٣ أيام وانا محتاجه للشغل حالاً",
+   "gold": "status",
+   "ok": false,
+   "got": "complaint",
+   "text": "complaint",
+   "prompt_tokens": 168,
+   "out_tokens": 3,
+   "ms": 583
+  },
+  {
+   "few": true,
+   "msg": "بتوصلوا أسوان؟",
+   "gold": "other",
+   "ok": true,
+   "got": "other",
+   "text": "other",
+   "prompt_tokens": 145,
+   "out_tokens": 2,
+   "ms": 482
+  },
+  {
+   "few": true,
+   "msg": "الغي طلبي 1110 لاقيته أرخص في حتة تانية",
+   "gold": "cancel",
+   "ok": true,
+   "got": "cancel",
+   "text": "cancel",
+   "prompt_tokens": 158,
+   "out_tokens": 2,
+   "ms": 489
+  },
+  {
+   "few": true,
+   "msg": "جالي لون غلط في أوردر 1115، عايز أبدّله",
+   "gold": "refund",
+   "ok": true,
+   "got": "refund",
+   "text": "refund",
+   "prompt_tokens": 159,
+   "out_tokens": 2,
+   "ms": 485
+  },
+  {
+   "few": true,
+   "msg": "ده تالت مرة الطلب يتأجل!!! أوردر 1120، هعمل شكوى في جهاز حماية المستهلك",
+   "gold": "complaint",
+   "ok": true,
+   "got": "complaint",
+   "text": "complaint",
+   "prompt_tokens": 164,
+   "out_tokens": 3,
+   "ms": 518
+  },
+  {
+   "few": true,
+   "msg": "شكرا الطلب وصل بسرعة 👌",
+   "gold": "other",
+   "ok": true,
+   "got": "other",
+   "text": "other",
+   "prompt_tokens": 147,
+   "out_tokens": 2,
+   "ms": 487
+  }
+ ]
+}
